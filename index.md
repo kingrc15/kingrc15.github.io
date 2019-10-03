@@ -1,4 +1,10 @@
-## Welcome to GitHub Pages
+---
+title: Ryan King
+image: 
+	feature: banner.jpg
+---
+
+## Welcome to my webpage
 
 You can use the [editor on GitHub](https://github.com/kingrc15/kingrc15.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
 
