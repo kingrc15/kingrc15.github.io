@@ -2,7 +2,7 @@
 <html>
 <head>
 <title>Ryan King</title>
-<link rel="stylesheet" type="text/css" media="all" href="./index.css"></link>
+<link rel="stylesheet" type="text/css" media="all" href="./index.css"/>
 </head>
 <body>
 	<div class="container">
