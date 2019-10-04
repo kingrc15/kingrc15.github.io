@@ -1,8 +1,28 @@
-.container{
-  width:100%;
-  height:60px;
-  overflow:hidden;
+.container {
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+	height: 100pt;
 }
-.img {
-  width:100%;
-);
+
+.banner_img {
+ 	width: 100%;
+}
+
+.prof_pic{
+	width:30%;
+	float:left;
+	padding: 5px;
+}
+
+.title{
+	font-size: 30;
+	padding: 20px;
+
+}
+
+.TAMU{
+	width:30%;
+	float:left;
+	padding: 5px;
+};
