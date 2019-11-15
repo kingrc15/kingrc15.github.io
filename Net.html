@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>NNWeb</title>
+    <link rel="stylesheet" type="text/css" media="all" href="./assets/css/Net.css" />
+</head>
+<body>
+    <div class="dropdown" , id="layerOptions">
+        <select id="dd">
+            <option>Select Layer Type</option>
+            <option>Sigmoid</option>
+            <option>TanH</option>
+            <option>ReLU</option>
+        </select>
+    </div>
+
+    <div class="Cost" , id="Cost">Cost = 0</div>
+    <div class="Accuracy" , id="Accuracy">Accuracy = 0</div>
+    <input class="NumLayers" type="Number" id="NumLayers" name="NumLayers">
+    <button class="SetUp" , id="SetUp" onclick="SetUp()">Enter</button>
+    <button class="Net" , id="CreateNet" onclick="net.validateFields()" disabled>Create Net</button>
+    <button class="SingleIter" id="backprop" onclick="net.backprop()" disabled>Back Propagation</button>
+    <button class="Loop" id="loop" onclick="loop(net, 10, 10000)" disabled>Loop (x10)</button>
+
+    <!--Scripts-->
+    <script type="text/javascript" src="./assets/js/Net.js"></script>
+
+</body>
+</html>
