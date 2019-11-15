@@ -2866,6 +2866,10 @@ input, select, textarea {
 		text-align: center;
 	}
 
+    .ProfilePic{
+        width: 80%;
+    }
+
 	header p {
 		color: rgba(255, 255, 255, 0.35);
 		position: relative;
