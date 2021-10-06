@@ -1,90 +1,68 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-07-22T18:40:21-05:00</updated><id>/feed.xml</id><title type="html">Ryan King</title><subtitle>An amazing website about me.</subtitle><author><name>Ryan King</name></author><entry><title type="html">Edge Case: Nested and Mixed Lists</title><link href="/edge%20case/first-post/" rel="alternate" type="text/html" title="Edge Case: Nested and Mixed Lists" /><published>2021-07-09T00:00:00-05:00</published><updated>2021-07-09T00:00:00-05:00</updated><id>/edge%20case/first-post</id><content type="html" xml:base="/edge%20case/first-post/">&lt;p&gt;Nested and mixed lists are an interesting beast. It’s a corner case to make sure that&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-10-06T11:12:18-05:00</updated><id>/feed.xml</id><title type="html">Ryan King</title><subtitle>An amazing website about me.</subtitle><author><name>Ryan King</name></author><entry><title type="html">Undergraduate Resources</title><link href="/setup/new-student-setup/" rel="alternate" type="text/html" title="Undergraduate Resources" /><published>2021-10-06T00:00:00-05:00</published><updated>2021-10-06T00:00:00-05:00</updated><id>/setup/new-student-setup</id><content type="html" xml:base="/setup/new-student-setup/">&lt;p&gt;Howdy! This page was created to help you get setup with the resources we have here in our lab. If you have any other information you would like to know, please send me a message and let me know.&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;Lists within lists do not break the ordered list numbering order&lt;/li&gt;
-  &lt;li&gt;Your list styles go deep enough.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#server-access&quot;&gt;Server Access&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#connect-to-the-server&quot;&gt;Connect to the Server&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#environment-setup&quot;&gt;Environment Setup&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#install-jupyter-lab&quot;&gt;Install Jupyter Lab&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&quot;ordered--unordered--ordered&quot;&gt;Ordered – Unordered – Ordered&lt;/h3&gt;
+&lt;h1 id=&quot;server-access&quot;&gt;Server Access&lt;/h1&gt;
+
+&lt;p&gt;To access the server, you first need an account on the server. Accounts are created by Engineering IT (engrit@tamu.edu). Either Dr Mortazavi or the graduate student who is advising you will email them about access. What they need from you is your netid (not your UIN). Once they have it, they’ll email IT about generating an account for you. This may take a week to do so please be patient. However, if you haven’t heard back in a week about your account, ask what the status is.&lt;/p&gt;
+
+&lt;h1 id=&quot;connect-to-the-server&quot;&gt;Connect to the Server&lt;/h1&gt;
+
+&lt;p&gt;Once you have an account, you will be able to connect to the server using SSH. An example is given below:&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ssh &amp;lt;netid&amp;gt;@cse-stmi-s1.cse.tamu.edu&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Note: if you aren’t at Texas A&amp;amp;M you will need to install the Cisco AnyConnect VPN for your OS and connect to it before you’ll be able to connect to the STMI server. Below are the links to install the Cisco AnyConnect per OS:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://servicenow.tamu.edu/tamucs?id=tamucs_kb_article&amp;amp;sys_id=4b744a4d1b6e30d89b92ed35624bcb0b&quot;&gt;Windows&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://servicenow.tamu.edu/tamucs?id=tamucs_kb_article&amp;amp;sys_id=48c977fcdbffdc10de49f271399619c6&quot;&gt;MacOS&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Linux: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sudo apt-get install network-manager-openconnect-gnome&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;environment-setup&quot;&gt;Environment Setup&lt;/h1&gt;
+
+&lt;p&gt;Now that you’re able to connect to the server, you need to set up your conda environment. To create the environment, you can run the following command:&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;conda create --name &amp;lt;env name of your choice&amp;gt; python=&amp;lt;python version&amp;gt;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Conda is then going to show you a list of packages it needs to install. Type ‘y’ and proceed with the creation of the environment.&lt;/p&gt;
+
+&lt;p&gt;Once you’ve created the environment, you can activate it using the following command:&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;conda activate &amp;lt;your env name&amp;gt;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;For a cheat sheet of useful conda commands, click this &lt;a href=&quot;https://docs.conda.io/projects/conda/en/4.6.0/_downloads/52a95608c49671267e40c689e0bc00ca/conda-cheatsheet.pdf&quot;&gt;link&lt;/a&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;install-juypyter-lab&quot;&gt;Install Juypyter Lab&lt;/h1&gt;
+
+&lt;p&gt;This part is completely optional but it’ll give you a nice clean way of viewing your code and files on the server. If you have a different method of accomplishing the same thing, go for it.&lt;/p&gt;
+
+&lt;p&gt;To start, install Jupyter Lab with the following command:&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;conda install -c conda-forge jupyterlab&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Just like your environment creation, conda is going to find a list of packages it needs to install and ask if it’s ok. Type ‘y’ to proceed with the installation.&lt;/p&gt;
+
+&lt;p&gt;To connect to your jupyter notebook remotely, you’ll need to have jupyter lab setup on your local machine. You can do this by installing conda on your local machine and following the same process above on your local machine or you can install it without anaconda.&lt;/p&gt;
+
+&lt;p&gt;Once you have jupyter lab setup on your machine and the server, we’re ready to connect the two. To connect, you need a terminal open that is connected to the server and has your conda environment activated and an additional terminal to run jupyter lab locally. Then follow these steps:&lt;/p&gt;
 
 &lt;ol&gt;
-  &lt;li&gt;ordered item&lt;/li&gt;
-  &lt;li&gt;ordered item
+  &lt;li&gt;On the server, run &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;jupyter lab --no-browser --port=8889&lt;/code&gt;
     &lt;ul&gt;
-      &lt;li&gt;&lt;strong&gt;unordered&lt;/strong&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;strong&gt;unordered&lt;/strong&gt;
-        &lt;ol&gt;
-          &lt;li&gt;ordered item&lt;/li&gt;
-          &lt;li&gt;ordered item&lt;/li&gt;
-        &lt;/ol&gt;
-      &lt;/li&gt;
+      &lt;li&gt;You probably won’t get port 8889 because it’s busy but jupyter will find an available port and display it on your screen as a URL that start with localhost.&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-  &lt;li&gt;ordered item&lt;/li&gt;
-  &lt;li&gt;ordered item&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&quot;ordered--unordered--unordered&quot;&gt;Ordered – Unordered – Unordered&lt;/h3&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;ordered item&lt;/li&gt;
-  &lt;li&gt;ordered item
+  &lt;li&gt;On your local machine, run &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ssh -L localhost:&amp;lt;port number&amp;gt;:localhost:&amp;lt;port number&amp;gt; &amp;lt;netid&amp;gt;@cse-stmi-s1.cse.tamu.edu&lt;/code&gt;
     &lt;ul&gt;
-      &lt;li&gt;&lt;strong&gt;unordered&lt;/strong&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;strong&gt;unordered&lt;/strong&gt;
-        &lt;ul&gt;
-          &lt;li&gt;unordered item&lt;/li&gt;
-          &lt;li&gt;unordered item&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
+      &lt;li&gt;The port number is the one that was specified in step 1. Don’t forget to use your netid when connecting to the server.&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-  &lt;li&gt;ordered item&lt;/li&gt;
-  &lt;li&gt;ordered item&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&quot;unordered--ordered--unordered&quot;&gt;Unordered – Ordered – Unordered&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;unordered item&lt;/li&gt;
-  &lt;li&gt;unordered item
-    &lt;ol&gt;
-      &lt;li&gt;ordered&lt;/li&gt;
-      &lt;li&gt;ordered
-        &lt;ul&gt;
-          &lt;li&gt;unordered item&lt;/li&gt;
-          &lt;li&gt;unordered item&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ol&gt;
-  &lt;/li&gt;
-  &lt;li&gt;unordered item&lt;/li&gt;
-  &lt;li&gt;unordered item&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;unordered--unordered--ordered&quot;&gt;Unordered – Unordered – Ordered&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;unordered item&lt;/li&gt;
-  &lt;li&gt;unordered item
-    &lt;ul&gt;
-      &lt;li&gt;unordered&lt;/li&gt;
-      &lt;li&gt;unordered
-        &lt;ol&gt;
-          &lt;li&gt;&lt;strong&gt;ordered item&lt;/strong&gt;&lt;/li&gt;
-          &lt;li&gt;&lt;strong&gt;ordered item&lt;/strong&gt;&lt;/li&gt;
-        &lt;/ol&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;unordered item&lt;/li&gt;
-  &lt;li&gt;unordered item&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;task-lists&quot;&gt;Task Lists&lt;/h3&gt;
-
-&lt;ul class=&quot;task-list&quot;&gt;
-  &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; checked=&quot;checked&quot; /&gt;Finish my changes&lt;/li&gt;
-  &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; /&gt;Push my commits to GitHub&lt;/li&gt;
-  &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; /&gt;Open a pull request&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Ryan King</name></author><category term="Edge Case" /><category term="content" /><category term="css" /><category term="edge case" /><category term="lists" /><category term="markup" /><summary type="html">Nested and mixed lists are an interesting beast. It’s a corner case to make sure that</summary></entry></feed>
+  &lt;li&gt;As long as you don’t have any errors, you can copy the URL provided in step 1 over to a new tab in a browser of your choice. At this point, you should be connected and able to interact with the server through the link.&lt;/li&gt;
+&lt;/ol&gt;</content><author><name>Ryan King</name></author><category term="Setup" /><category term="Setup" /><category term="Undergraduates" /><category term="New Students" /><summary type="html">Howdy! This page was created to help you get setup with the resources we have here in our lab. If you have any other information you would like to know, please send me a message and let me know.</summary></entry></feed>
