@@ -1,10 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-10-06T11:12:18-05:00</updated><id>/feed.xml</id><title type="html">Ryan King</title><subtitle>An amazing website about me.</subtitle><author><name>Ryan King</name></author><entry><title type="html">Undergraduate Resources</title><link href="/setup/new-student-setup/" rel="alternate" type="text/html" title="Undergraduate Resources" /><published>2021-10-06T00:00:00-05:00</published><updated>2021-10-06T00:00:00-05:00</updated><id>/setup/new-student-setup</id><content type="html" xml:base="/setup/new-student-setup/">&lt;p&gt;Howdy! This page was created to help you get setup with the resources we have here in our lab. If you have any other information you would like to know, please send me a message and let me know.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-10-07T09:11:14-05:00</updated><id>/feed.xml</id><title type="html">Ryan King</title><subtitle>An amazing website about me.</subtitle><author><name>Ryan King</name></author><entry><title type="html">Undergraduate Resources</title><link href="/setup/new-student-setup/" rel="alternate" type="text/html" title="Undergraduate Resources" /><published>2021-10-06T00:00:00-05:00</published><updated>2021-10-06T00:00:00-05:00</updated><id>/setup/new-student-setup</id><content type="html" xml:base="/setup/new-student-setup/">&lt;p&gt;Howdy! This page was created to help you get setup with the resources we have here in our lab. If you have any other information you would like to know, please send me a message and let me know.&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;#server-access&quot;&gt;Server Access&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#connect-to-the-server&quot;&gt;Connect to the Server&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#environment-setup&quot;&gt;Environment Setup&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#install-jupyter-lab&quot;&gt;Install Jupyter Lab&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#server-etiquette&quot;&gt;Server Etiquette&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#useful-info&quot;&gt;Useful Info&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h1 id=&quot;server-access&quot;&gt;Server Access&lt;/h1&gt;
@@ -56,7 +58,7 @@
 &lt;ol&gt;
   &lt;li&gt;On the server, run &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;jupyter lab --no-browser --port=8889&lt;/code&gt;
     &lt;ul&gt;
-      &lt;li&gt;You probably won’t get port 8889 because it’s busy but jupyter will find an available port and display it on your screen as a URL that start with localhost.&lt;/li&gt;
+      &lt;li&gt;You probably won’t get port 8889 because it’s busy but jupyter will find an available port and display it on your screen as a URL that starts with localhost.&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
   &lt;li&gt;On your local machine, run &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ssh -L localhost:&amp;lt;port number&amp;gt;:localhost:&amp;lt;port number&amp;gt; &amp;lt;netid&amp;gt;@cse-stmi-s1.cse.tamu.edu&lt;/code&gt;
@@ -65,4 +67,26 @@
     &lt;/ul&gt;
   &lt;/li&gt;
   &lt;li&gt;As long as you don’t have any errors, you can copy the URL provided in step 1 over to a new tab in a browser of your choice. At this point, you should be connected and able to interact with the server through the link.&lt;/li&gt;
-&lt;/ol&gt;</content><author><name>Ryan King</name></author><category term="Setup" /><category term="Setup" /><category term="Undergraduates" /><category term="New Students" /><summary type="html">Howdy! This page was created to help you get setup with the resources we have here in our lab. If you have any other information you would like to know, please send me a message and let me know.</summary></entry></feed>
+&lt;/ol&gt;
+
+&lt;h1 id=&quot;server-etiquette&quot;&gt;Server Etiquette&lt;/h1&gt;
+
+&lt;p&gt;If you know that you’re going to be running a large task (i.e. training a model on ImageNet), change the priority of your code so that it doesn’t prevent others from running their tests. You can do this by “renicing” your code. You can use renice to change the priority of all of your jobs with this command:&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;renice -n &amp;lt;priority&amp;gt; -u &amp;lt;your username&amp;gt;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Priorities are set to 0 by default. Essential OS jobs will have a negative priority. If you need to change the priority your code, change it to a high positive number (i.e. 10). If you need to change the priority of a specific job, you can run this:&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;renice -p &amp;lt;pid&amp;gt;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;You can find the PID of your jobs and monitor their resource usage with htop:&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;htop -u &amp;lt;username&amp;gt;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;For more information about htop or renice, you can use -h to get a short description of the arguments.&lt;/p&gt;
+
+&lt;h1 id=&quot;useful-info&quot;&gt;Useful Info&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;On the server data is located at &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\data&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\olddata&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Ryan King</name></author><category term="Setup" /><category term="Setup" /><category term="Undergraduates" /><category term="New Students" /><summary type="html">Howdy! This page was created to help you get setup with the resources we have here in our lab. If you have any other information you would like to know, please send me a message and let me know.</summary></entry></feed>

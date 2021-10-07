@@ -14,6 +14,8 @@ Howdy! This page was created to help you get setup with the resources we have he
 * [Connect to the Server](#connect-to-the-server)
 * [Environment Setup](#environment-setup)
 * [Install Jupyter Lab](#install-jupyter-lab)
+* [Server Etiquette](#server-etiquette)
+* [Useful Info](#useful-info)
 
 
 # Server Access
@@ -61,8 +63,27 @@ To connect to your jupyter notebook remotely, you’ll need to have jupyter lab 
 Once you have jupyter lab setup on your machine and the server, we’re ready to connect the two. To connect, you need a terminal open that is connected to the server and has your conda environment activated and an additional terminal to run jupyter lab locally. Then follow these steps:
 
 1. On the server, run `jupyter lab --no-browser --port=8889`
-    * You probably won’t get port 8889 because it’s busy but jupyter will find an available port and display it on your screen as a URL that start with localhost.
+    * You probably won’t get port 8889 because it’s busy but jupyter will find an available port and display it on your screen as a URL that starts with localhost.
 2. On your local machine, run `ssh -L localhost:<port number>:localhost:<port number> <netid>@cse-stmi-s1.cse.tamu.edu`
     * The port number is the one that was specified in step 1. Don’t forget to use your netid when connecting to the server.
 3. As long as you don’t have any errors, you can copy the URL provided in step 1 over to a new tab in a browser of your choice. At this point, you should be connected and able to interact with the server through the link. 
 
+# Server Etiquette
+
+If you know that you're going to be running a large task (i.e. training a model on ImageNet), change the priority of your code so that it doesn't prevent others from running their tests. You can do this by "renicing" your code. You can use renice to change the priority of all of your jobs with this command:
+
+`renice -n <priority> -u <your username>`
+
+Priorities are set to 0 by default. Essential OS jobs will have a negative priority. If you need to change the priority your code, change it to a high positive number (i.e. 10). If you need to change the priority of a specific job, you can run this:
+
+`renice -p <pid>`
+
+You can find the PID of your jobs and monitor their resource usage with htop:
+
+`htop -u <username>`
+
+For more information about htop or renice, you can use -h to get a short description of the arguments.
+
+# Useful Info
+
+* On the server data is located at `\data` and `\olddata`
