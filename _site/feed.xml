@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-10-07T09:11:14-05:00</updated><id>/feed.xml</id><title type="html">Ryan King</title><subtitle>An amazing website about me.</subtitle><author><name>Ryan King</name></author><entry><title type="html">Undergraduate Resources</title><link href="/setup/new-student-setup/" rel="alternate" type="text/html" title="Undergraduate Resources" /><published>2021-10-06T00:00:00-05:00</published><updated>2021-10-06T00:00:00-05:00</updated><id>/setup/new-student-setup</id><content type="html" xml:base="/setup/new-student-setup/">&lt;p&gt;Howdy! This page was created to help you get setup with the resources we have here in our lab. If you have any other information you would like to know, please send me a message and let me know.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-10-11T09:16:54-05:00</updated><id>/feed.xml</id><title type="html">Ryan King</title><subtitle>An amazing website about me.</subtitle><author><name>Ryan King</name></author><entry><title type="html">New Student Resources</title><link href="/setup/new-student-setup/" rel="alternate" type="text/html" title="New Student Resources" /><published>2021-10-06T00:00:00-05:00</published><updated>2021-10-06T00:00:00-05:00</updated><id>/setup/new-student-setup</id><content type="html" xml:base="/setup/new-student-setup/">&lt;p&gt;Howdy! This page was created to help you get setup with the resources we have here in our lab. If you have any other information you would like to know, please send me a message and let me know.&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;#server-access&quot;&gt;Server Access&lt;/a&gt;&lt;/li&gt;
@@ -41,7 +41,7 @@
 
 &lt;p&gt;For a cheat sheet of useful conda commands, click this &lt;a href=&quot;https://docs.conda.io/projects/conda/en/4.6.0/_downloads/52a95608c49671267e40c689e0bc00ca/conda-cheatsheet.pdf&quot;&gt;link&lt;/a&gt;&lt;/p&gt;
 
-&lt;h1 id=&quot;install-juypyter-lab&quot;&gt;Install Juypyter Lab&lt;/h1&gt;
+&lt;h1 id=&quot;install-jupyter-lab&quot;&gt;Install Jupyter Lab&lt;/h1&gt;
 
 &lt;p&gt;This part is completely optional but it’ll give you a nice clean way of viewing your code and files on the server. If you have a different method of accomplishing the same thing, go for it.&lt;/p&gt;
 
@@ -59,8 +59,14 @@
   &lt;li&gt;On the server, run &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;jupyter lab --no-browser --port=8889&lt;/code&gt;
     &lt;ul&gt;
       &lt;li&gt;You probably won’t get port 8889 because it’s busy but jupyter will find an available port and display it on your screen as a URL that starts with localhost.&lt;/li&gt;
+      &lt;li&gt;Example output is below. The higlighted portion is the link you’ll use. Notice that here it does say 8889:&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/jupyter_example.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;ol&gt;
   &lt;li&gt;On your local machine, run &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ssh -L localhost:&amp;lt;port number&amp;gt;:localhost:&amp;lt;port number&amp;gt; &amp;lt;netid&amp;gt;@cse-stmi-s1.cse.tamu.edu&lt;/code&gt;
     &lt;ul&gt;
       &lt;li&gt;The port number is the one that was specified in step 1. Don’t forget to use your netid when connecting to the server.&lt;/li&gt;
@@ -88,5 +94,5 @@
 &lt;h1 id=&quot;useful-info&quot;&gt;Useful Info&lt;/h1&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;On the server data is located at &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\data&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\olddata&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;On the server, data is located at &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\data&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\olddata&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;</content><author><name>Ryan King</name></author><category term="Setup" /><category term="Setup" /><category term="Undergraduates" /><category term="New Students" /><summary type="html">Howdy! This page was created to help you get setup with the resources we have here in our lab. If you have any other information you would like to know, please send me a message and let me know.</summary></entry></feed>

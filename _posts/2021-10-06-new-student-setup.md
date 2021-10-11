@@ -1,5 +1,5 @@
 ---
-title: "Undergraduate Resources"
+title: "New Student Resources"
 categories:
   - Setup
 tags:
@@ -48,7 +48,7 @@ Once you’ve created the environment, you can activate it using the following c
 
 For a cheat sheet of useful conda commands, click this [link](https://docs.conda.io/projects/conda/en/4.6.0/_downloads/52a95608c49671267e40c689e0bc00ca/conda-cheatsheet.pdf)
 
-# Install Juypyter Lab
+# Install Jupyter Lab
 
 This part is completely optional but it’ll give you a nice clean way of viewing your code and files on the server. If you have a different method of accomplishing the same thing, go for it. 
 
@@ -64,6 +64,10 @@ Once you have jupyter lab setup on your machine and the server, we’re ready to
 
 1. On the server, run `jupyter lab --no-browser --port=8889`
     * You probably won’t get port 8889 because it’s busy but jupyter will find an available port and display it on your screen as a URL that starts with localhost.
+    * Example output is below. The higlighted portion is the link you'll use. Notice that here it does say 8889:
+
+<img src="{{ site.url }}{{ site.baseurl }}/assets/images/jupyter_example.png" alt="">
+
 2. On your local machine, run `ssh -L localhost:<port number>:localhost:<port number> <netid>@cse-stmi-s1.cse.tamu.edu`
     * The port number is the one that was specified in step 1. Don’t forget to use your netid when connecting to the server.
 3. As long as you don’t have any errors, you can copy the URL provided in step 1 over to a new tab in a browser of your choice. At this point, you should be connected and able to interact with the server through the link. 
@@ -86,4 +90,4 @@ For more information about htop or renice, you can use -h to get a short descrip
 
 # Useful Info
 
-* On the server data is located at `\data` and `\olddata`
+* On the server, data is located at `\data` and `\olddata`
