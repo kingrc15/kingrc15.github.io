@@ -4,4 +4,10 @@ var store = [{
         "tags": ["Setup","Undergraduates","New Students"],
         "url": "/setup/new-student-setup/",
         "teaser": null
+      },{
+        "title": "Intro To Pytorch",
+        "excerpt":"       ","categories": [],
+        "tags": [],
+        "url": "/intro-to-pytorch/",
+        "teaser": null
       }]
