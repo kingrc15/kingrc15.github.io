@@ -10,4 +10,10 @@ var store = [{
         "tags": [],
         "url": "/intro-to-pytorch/",
         "teaser": null
+      },{
+        "title": "Computational Graphs",
+        "excerpt":"        ","categories": [],
+        "tags": [],
+        "url": "/computational-graphs/",
+        "teaser": null
       }]
