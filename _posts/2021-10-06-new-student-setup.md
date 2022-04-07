@@ -26,7 +26,9 @@ To access the server, you first need an account on the server. Accounts are crea
 
 Once you have an account, you will be able to connect to the server using SSH. An example is given below:
 
-`ssh <netid>@cse-stmi-s1.cse.tamu.edu`
+`ssh -o ServerAliveInterval=5 <netid>@cse-stmi-s1.cse.tamu.edu`
+
+Don't worry about the ServerAliveInterval option. This just keeps your session from timing out.
 
 Note: if you aren’t at Texas A&M you will need to install the Cisco AnyConnect VPN for your OS and connect to it before you’ll be able to connect to the STMI server. Below are the links to install the Cisco AnyConnect per OS:
 
