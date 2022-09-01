@@ -99,12 +99,14 @@ You may want to run your code while you aren't connected to the server. For exam
 Reconnecting is slightly different for `tmux` and `screen`. For both, you'll first need to reconnect to the server. Then you'll do the following to reconnect:
 
 - For `tmux`, the command is `tmux attach`. This will automatically attach you to a detached tmux session.
+
 - For `screen`, the command is `screen -r`. If you have multiple screen sessions, you'll need to specify the process idea like below: `screen -r <pid>`
 
   <img src="{{ site.url }}{{ site.baseurl }}/assets/images/screen_example.png" alt="">
 
-For more information about `tmux`, checkout this cheatsheet: https://tmuxcheatsheet.com/
-For more information about `screen`, checkout this cheatsheet: https://kapeli.com/cheat_sheets/screen.docset/Contents/Resources/Documents/index
+For more information about `tmux`, checkout this [cheatsheet](https://tmuxcheatsheet.com/)
+
+For more information about `screen`, checkout this [cheatsheet](https://kapeli.com/cheat_sheets/screen.docset/Contents/Resources/Documents/index)
 
 ## Experiment Tracking (Weights and Biases)
 
