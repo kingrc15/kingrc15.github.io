@@ -92,4 +92,20 @@ For more information about htop or renice, you can use -h to get a short descrip
 
 # Useful Info
 
-* On the server, data is located at `\data` and `\olddata`
+## Running code while disconnected
+
+You may want to run your code while you aren't connected to the server. For example, you may want something to run over night but can't keep your SSH session open. There are two programs that can be used to run your code in these scenarious: `tmux` and `screen`. These two programs work very similarly. They both create a terminal that can be detached or reattached as needed. To create a session, just type the name of the program you'd like to run (`tmux` or `screen`). The new terminal will work exactly the same as your normal terminal except now, when you disconnect from your SSH session, your code will still be running. 
+
+Reconnecting is slightly different for `tmux` and `screen`. For both, you'll first need to reconnect to the server. Then you'll do the following to reconnect:
+
+- For `tmux`, the command is `tmux attach`. This will automatically attach you to a detached tmux session.
+- For `screen`, the command is `screen -r`. If you have multiple screen sessions, you'll need to specify the process idea like below: `screen -r <pid>`
+
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/screen_example.png" alt="">
+
+For more information about `tmux`, checkout this cheatsheet: https://tmuxcheatsheet.com/
+For more information about `screen`, checkout this cheatsheet: https://kapeli.com/cheat_sheets/screen.docset/Contents/Resources/Documents/index
+
+## Experiment Tracking (Weights and Biases)
+
+If you haven't heard of Weights and Biases, you need to check them out: https://wandb.ai/. They provide a way to track your experiments, visualize their performance and even perform hyperparameter optimization. It really simple to setup too. Just import the python library `wandb`, create the session and log important metrics to wandb. Weights and Biases can run your hyperparamter optimization if you use the [`argparse`](https://docs.python.org/3/library/argparse.html) library to configure your model and training. It'll even provide a guess a what it thinks your search space should look like when you initialize the sweep.
