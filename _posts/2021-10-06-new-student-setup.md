@@ -76,6 +76,8 @@ Once you have jupyter lab setup on your machine and the server, we’re ready to
 
 # Server Etiquette
 
+## renice
+
 If you know that you're going to be running a large task (i.e. training a model on ImageNet), change the priority of your code so that it doesn't prevent others from running their tests. You can do this by "renicing" your code. You can use renice to change the priority of all of your jobs with this command:
 
 `renice -n <priority> -u <your username>`
@@ -89,6 +91,18 @@ You can find the PID of your jobs and monitor their resource usage with htop:
 `htop -u <username>`
 
 For more information about htop or renice, you can use -h to get a short description of the arguments.
+
+## gpustat
+
+**Additionally, monitor your GPU usage.** The GPUs are there to be used. However, you shouldn't be using all the GPUs all the time. To monitor your GPU usage, install gpustat:
+
+`conda install -c conda-forge gpustat`
+
+You can run gpustat from your command line using the following command:
+
+`gpustat -pi`
+
+The `p` flag will display the processes being run on each GPU. The `i` flag will launch gpustat in interactive mode. If you just want a snapshot of what the GPUs currently are doing, leave the `i` flag out. I recommend running this command with the `i` flag and placing it somewhere you can see all the time that way you can monitor your GPU usage.
 
 # Useful Info
 
