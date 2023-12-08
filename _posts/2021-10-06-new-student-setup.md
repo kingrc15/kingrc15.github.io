@@ -8,7 +8,7 @@ tags:
   - New Students
 ---
 
-Howdy! This page was created to help you get setup with the resources we have here in our lab. If you have any other information you would like to know, please send me a message and let me know.
+This page was created to help you get setup with the resources we have here in our lab. If you have any other information you would like to know, please send me a message and let me know.
 
 * [Server Access](#server-access)
 * [Connect to the Server](#connect-to-the-server)
