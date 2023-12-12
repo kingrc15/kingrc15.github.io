@@ -96,7 +96,7 @@ analytics:
 author:
   name             : "Ryan King"
   avatar           : "/assets/images/ryan-king.jpg"
-  bio              : "I'm a Ph.D student at Texas A&M studying ways to democratize machine learning for healthcare with AutoML"
+  bio              : "I’m a Ph.D student at Texas A&M, studying machine learning with a focus on its application to healthcare."
   location         : "College Station"
   email            :
   links:
