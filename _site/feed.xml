@@ -1,4 +1,73 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-11-11T21:25:17-06:00</updated><id>/feed.xml</id><title type="html">Ryan King</title><subtitle>An amazing website about me.</subtitle><author><name>Ryan King</name></author><entry><title type="html">Computational Graphs</title><link href="/computational-graphs/" rel="alternate" type="text/html" title="Computational Graphs" /><published>2021-11-11T00:00:00-06:00</published><updated>2021-11-11T00:00:00-06:00</updated><id>/computational-graphs</id><content type="html" xml:base="/computational-graphs/">&lt;style type=&quot;text/css&quot;&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-01-02T16:36:36-06:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Ryan King</title><subtitle>An amazing website about me.</subtitle><author><name>Ryan King</name></author><entry><title type="html">Unimodal Contrastive Pretraining Of Clinical Timeseries</title><link href="http://localhost:4000/unimodal-contrastive-pretraining-of-clinical-timeseries/" rel="alternate" type="text/html" title="Unimodal Contrastive Pretraining Of Clinical Timeseries" /><published>2024-11-10T00:00:00-06:00</published><updated>2024-11-10T00:00:00-06:00</updated><id>http://localhost:4000/unimodal-contrastive-pretraining-of-clinical-timeseries</id><content type="html" xml:base="http://localhost:4000/unimodal-contrastive-pretraining-of-clinical-timeseries/"><![CDATA[<h1 id="ehr-modeling-with-contrastive-learning-a-new-approach-to-pretraining-clinical-time-series-data">EHR Modeling with Contrastive Learning: A New Approach to Pretraining Clinical Time Series Data</h1>
+
+<p><strong>By Ryan King, Shivesh Kodali, Conrad Krueger, Tianbao Yang, and Bobak J. Mortazavi</strong><br />
+Published in <em>Machine Learning for Health</em></p>
+
+<p>In the fast-evolving world of machine learning, the challenge of harnessing Electronic Health Record (EHR) data remains monumental. These datasets, rich with time-series measurements from ICU patients, hold immense potential for advancing clinical decision-making, personalized medicine, and predictive modeling. However, the roadblock has always been the reliance on large amounts of labeled data—expensive and time-consuming to curate.</p>
+
+<p>To address this, our research introduces <strong>an efficient contrastive unimodal pretraining method for EHR time series data</strong>. This innovative approach not only reduces computational demands but also sets a new benchmark in learning meaningful representations from unlabeled data.</p>
+
+<hr />
+
+<h2 id="the-problem-with-existing-approaches">The Problem with Existing Approaches</h2>
+
+<p>State-of-the-art methods like supervised deep neural networks (DNNs) demand vast amounts of labeled data. While self-supervised learning alleviates this dependency, most techniques require large batch sizes to ensure performance, creating a computational bottleneck when processing long ICU time-series data. Furthermore, irregular sampling and missing values in EHRs make modeling even more complex.</p>
+
+<hr />
+
+<h2 id="a-novel-solution-combining-contrastive-and-masked-pretraining">A Novel Solution: Combining Contrastive and Masked Pretraining</h2>
+
+<p>Our method innovatively marries two complementary self-supervised tasks:</p>
+
+<ol>
+  <li>
+    <p><strong>Masked Token Imputation</strong><br />
+Inspired by NLP, we treat each EHR measurement as a token in a sequence. By masking only the values (leaving type and time information intact), the model learns to predict missing measurements, addressing data sparsity and irregularity.</p>
+  </li>
+  <li>
+    <p><strong>Contrastive Sequence Learning</strong><br />
+By generating augmented “global” and “local” views of the same sequence, the model aligns broader patterns with fine-grained details. A variance-reducing estimator enables efficient learning, even with smaller batch sizes.</p>
+  </li>
+</ol>
+
+<hr />
+
+<h2 id="key-advantages-of-our-method">Key Advantages of Our Method</h2>
+
+<ul>
+  <li><strong>Scalability:</strong> Handles long sequences and diverse measurement sets without needing imputation or retraining.</li>
+  <li><strong>Flexibility:</strong> Learns from any subset of features, adapting seamlessly to new clinical environments.</li>
+  <li><strong>Efficiency:</strong> Reduces computational overhead by leveraging a smaller, GPU-friendly architecture.</li>
+</ul>
+
+<hr />
+
+<h2 id="results-that-matter">Results That Matter</h2>
+
+<p>We evaluated our approach on two open-source ICU datasets, MIMIC-III and eICU. Highlights include:</p>
+
+<ul>
+  <li><strong>In-Hospital Mortality Prediction:</strong> Achieved an AUC-ROC of 0.854 and AUC-PR of 0.468, outperforming both traditional and state-of-the-art methods.</li>
+  <li><strong>Phenotyping and Imputation:</strong> Demonstrated robust performance on phenotyping tasks and precise imputation of missing measurements.</li>
+  <li><strong>Transferability:</strong> Models trained on MIMIC-III successfully transferred knowledge to eICU, proving their generalizability across clinics.</li>
+</ul>
+
+<p>Our results show that pretraining with our combined method yields superior representations, even in semi-supervised settings with limited labeled data.</p>
+
+<hr />
+
+<h2 id="real-world-implications">Real-World Implications</h2>
+
+<p>This research bridges a critical gap in EHR modeling, making advanced analytics more accessible to clinics with limited resources. By reducing the reliance on labeled data and enabling efficient computation, our method paves the way for real-time clinical insights, more equitable healthcare, and scalable AI solutions.</p>
+
+<hr />
+
+<h2 id="final-thoughts">Final Thoughts</h2>
+
+<p>Our work is a step forward in the journey toward universal, robust foundation models for healthcare. As machine learning continues to integrate into clinical workflows, approaches like ours will play a pivotal role in unlocking the true potential of EHR data.</p>
+
+<p><a href="https://github.com/shiveshchowdary/EHR-ContrastiveLearning">Explore the full paper on GitHub</a>
+<a href="https://arxiv.org/abs/2410.09199">or on Arxiv</a></p>]]></content><author><name>Ryan King</name></author><summary type="html"><![CDATA[EHR Modeling with Contrastive Learning: A New Approach to Pretraining Clinical Time Series Data]]></summary></entry><entry><title type="html">Computational Graphs</title><link href="http://localhost:4000/computational-graphs/" rel="alternate" type="text/html" title="Computational Graphs" /><published>2021-11-11T00:00:00-06:00</published><updated>2021-11-11T00:00:00-06:00</updated><id>http://localhost:4000/computational-graphs</id><content type="html" xml:base="http://localhost:4000/computational-graphs/"><![CDATA[<style type="text/css">
   .gist {
     width: 1000px;
   }
@@ -12,114 +81,151 @@
     width: 1000px !important;
   }
 }
-&lt;/style&gt;
+</style>
 
-&lt;div&gt;
-  &lt;script src=&quot;https://gist.github.com/kingrc15/daad78c2fdcfba6bfd4e0d06cfd98d6a.js&quot;&gt;&lt;/script&gt;
-&lt;/div&gt;</content><author><name>Ryan King</name></author><summary type="html"></summary></entry><entry><title type="html">Intro To Pytorch</title><link href="/intro-to-pytorch/" rel="alternate" type="text/html" title="Intro To Pytorch" /><published>2021-10-21T00:00:00-05:00</published><updated>2021-10-21T00:00:00-05:00</updated><id>/intro-to-pytorch</id><content type="html" xml:base="/intro-to-pytorch/">&lt;style type=&quot;text/css&quot;&gt;
+<div>
+  <script src="https://gist.github.com/kingrc15/daad78c2fdcfba6bfd4e0d06cfd98d6a.js"></script>
+</div>]]></content><author><name>Ryan King</name></author><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">Intro To Pytorch</title><link href="http://localhost:4000/intro-to-pytorch/" rel="alternate" type="text/html" title="Intro To Pytorch" /><published>2021-10-21T00:00:00-05:00</published><updated>2021-10-21T00:00:00-05:00</updated><id>http://localhost:4000/intro-to-pytorch</id><content type="html" xml:base="http://localhost:4000/intro-to-pytorch/"><![CDATA[<style type="text/css">
   .gist iframe.render-viewer {
     height: 3000px !important;
   }
 }
-&lt;/style&gt;
+</style>
 
-&lt;div&gt;
-  &lt;script src=&quot;https://gist.github.com/kingrc15/0a9a2cf85f5e658c921bad5c438f8e12.js&quot;&gt;&lt;/script&gt;
-&lt;/div&gt;</content><author><name>Ryan King</name></author><summary type="html"></summary></entry><entry><title type="html">New Student Resources</title><link href="/setup/new-student-setup/" rel="alternate" type="text/html" title="New Student Resources" /><published>2021-10-06T00:00:00-05:00</published><updated>2021-10-06T00:00:00-05:00</updated><id>/setup/new-student-setup</id><content type="html" xml:base="/setup/new-student-setup/">&lt;p&gt;Howdy! This page was created to help you get setup with the resources we have here in our lab. If you have any other information you would like to know, please send me a message and let me know.&lt;/p&gt;
+<div>
+  <script src="https://gist.github.com/kingrc15/0a9a2cf85f5e658c921bad5c438f8e12.js"></script>
+</div>]]></content><author><name>Ryan King</name></author><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">New Student Resources</title><link href="http://localhost:4000/setup/new-student-setup/" rel="alternate" type="text/html" title="New Student Resources" /><published>2021-10-06T00:00:00-05:00</published><updated>2021-10-06T00:00:00-05:00</updated><id>http://localhost:4000/setup/new-student-setup</id><content type="html" xml:base="http://localhost:4000/setup/new-student-setup/"><![CDATA[<p>This page was created to help you get setup with the resources we have here in our lab. If you have any other information you would like to know, please send me a message and let me know.</p>
 
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;#server-access&quot;&gt;Server Access&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#connect-to-the-server&quot;&gt;Connect to the Server&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#environment-setup&quot;&gt;Environment Setup&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#install-jupyter-lab&quot;&gt;Install Jupyter Lab&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#server-etiquette&quot;&gt;Server Etiquette&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#useful-info&quot;&gt;Useful Info&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
+<ul>
+  <li><a href="#server-access">Server Access</a></li>
+  <li><a href="#connect-to-the-server">Connect to the Server</a></li>
+  <li><a href="#environment-setup">Environment Setup</a></li>
+  <li><a href="#install-jupyter-lab">Install Jupyter Lab</a></li>
+  <li><a href="#server-etiquette">Server Etiquette</a></li>
+  <li><a href="#useful-info">Useful Info</a></li>
+</ul>
 
-&lt;h1 id=&quot;server-access&quot;&gt;Server Access&lt;/h1&gt;
+<h1 id="server-access">Server Access</h1>
 
-&lt;p&gt;To access the server, you first need an account on the server. Accounts are created by Engineering IT (engrit@tamu.edu). Either Dr Mortazavi or the graduate student who is advising you will email them about access. What they need from you is your netid (not your UIN). Once they have it, they’ll email IT about generating an account for you. This may take a week to do so please be patient. However, if you haven’t heard back in a week about your account, ask what the status is.&lt;/p&gt;
+<p>To access the server, you first need an account on the server. Accounts are created by Engineering IT (engrit@tamu.edu). Either Dr Mortazavi or the graduate student who is advising you will email them about access. What they need from you is your netid (not your UIN). Once they have it, they’ll email IT about generating an account for you. This may take a week to do so please be patient. However, if you haven’t heard back in a week about your account, ask what the status is.</p>
 
-&lt;h1 id=&quot;connect-to-the-server&quot;&gt;Connect to the Server&lt;/h1&gt;
+<h1 id="connect-to-the-server">Connect to the Server</h1>
 
-&lt;p&gt;Once you have an account, you will be able to connect to the server using SSH. An example is given below:&lt;/p&gt;
+<p>Once you have an account, you will be able to connect to the server using SSH. An example is given below:</p>
 
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ssh &amp;lt;netid&amp;gt;@cse-stmi-s1.cse.tamu.edu&lt;/code&gt;&lt;/p&gt;
+<p><code class="language-plaintext highlighter-rouge">ssh -o ServerAliveInterval=5 &lt;netid&gt;@cse-stmi-s1.cse.tamu.edu</code></p>
 
-&lt;p&gt;Note: if you aren’t at Texas A&amp;amp;M you will need to install the Cisco AnyConnect VPN for your OS and connect to it before you’ll be able to connect to the STMI server. Below are the links to install the Cisco AnyConnect per OS:&lt;/p&gt;
+<p>Don’t worry about the ServerAliveInterval option. This just keeps your session from timing out.</p>
 
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://servicenow.tamu.edu/tamucs?id=tamucs_kb_article&amp;amp;sys_id=4b744a4d1b6e30d89b92ed35624bcb0b&quot;&gt;Windows&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://servicenow.tamu.edu/tamucs?id=tamucs_kb_article&amp;amp;sys_id=48c977fcdbffdc10de49f271399619c6&quot;&gt;MacOS&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Linux: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sudo apt-get install network-manager-openconnect-gnome&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
+<p>Note: if you aren’t at Texas A&amp;M you will need to install the Cisco AnyConnect VPN for your OS and connect to it before you’ll be able to connect to the STMI server. Below are the links to install the Cisco AnyConnect per OS:</p>
 
-&lt;h1 id=&quot;environment-setup&quot;&gt;Environment Setup&lt;/h1&gt;
+<ul>
+  <li><a href="https://servicenow.tamu.edu/tamucs?id=tamucs_kb_article&amp;sys_id=4b744a4d1b6e30d89b92ed35624bcb0b">Windows</a></li>
+  <li><a href="https://servicenow.tamu.edu/tamucs?id=tamucs_kb_article&amp;sys_id=48c977fcdbffdc10de49f271399619c6">MacOS</a></li>
+  <li>Linux: <code class="language-plaintext highlighter-rouge">sudo apt-get install network-manager-openconnect-gnome</code></li>
+</ul>
 
-&lt;p&gt;Now that you’re able to connect to the server, you need to set up your conda environment. To create the environment, you can run the following command:&lt;/p&gt;
+<h1 id="environment-setup">Environment Setup</h1>
 
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;conda create --name &amp;lt;env name of your choice&amp;gt; python=&amp;lt;python version&amp;gt;&lt;/code&gt;&lt;/p&gt;
+<p>Now that you’re able to connect to the server, you need to set up your conda environment. To create the environment, you can run the following command:</p>
 
-&lt;p&gt;Conda is then going to show you a list of packages it needs to install. Type ‘y’ and proceed with the creation of the environment.&lt;/p&gt;
+<p><code class="language-plaintext highlighter-rouge">conda create --name &lt;env name of your choice&gt; python=&lt;python version&gt;</code></p>
 
-&lt;p&gt;Once you’ve created the environment, you can activate it using the following command:&lt;/p&gt;
+<p>Conda is then going to show you a list of packages it needs to install. Type ‘y’ and proceed with the creation of the environment.</p>
 
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;conda activate &amp;lt;your env name&amp;gt;&lt;/code&gt;&lt;/p&gt;
+<p>Once you’ve created the environment, you can activate it using the following command:</p>
 
-&lt;p&gt;For a cheat sheet of useful conda commands, click this &lt;a href=&quot;https://docs.conda.io/projects/conda/en/4.6.0/_downloads/52a95608c49671267e40c689e0bc00ca/conda-cheatsheet.pdf&quot;&gt;link&lt;/a&gt;&lt;/p&gt;
+<p><code class="language-plaintext highlighter-rouge">conda activate &lt;your env name&gt;</code></p>
 
-&lt;h1 id=&quot;install-jupyter-lab&quot;&gt;Install Jupyter Lab&lt;/h1&gt;
+<p>For a cheat sheet of useful conda commands, click this <a href="https://docs.conda.io/projects/conda/en/4.6.0/_downloads/52a95608c49671267e40c689e0bc00ca/conda-cheatsheet.pdf">link</a></p>
 
-&lt;p&gt;This part is completely optional but it’ll give you a nice clean way of viewing your code and files on the server. If you have a different method of accomplishing the same thing, go for it.&lt;/p&gt;
+<h1 id="install-jupyter-lab">Install Jupyter Lab</h1>
 
-&lt;p&gt;To start, install Jupyter Lab with the following command:&lt;/p&gt;
+<p>This part is completely optional but it’ll give you a nice clean way of viewing your code and files on the server. If you have a different method of accomplishing the same thing, go for it.</p>
 
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;conda install -c conda-forge jupyterlab&lt;/code&gt;&lt;/p&gt;
+<p>To start, install Jupyter Lab with the following command:</p>
 
-&lt;p&gt;Just like your environment creation, conda is going to find a list of packages it needs to install and ask if it’s ok. Type ‘y’ to proceed with the installation.&lt;/p&gt;
+<p><code class="language-plaintext highlighter-rouge">conda install -c conda-forge jupyterlab</code></p>
 
-&lt;p&gt;To connect to your jupyter notebook remotely, you’ll need to have jupyter lab setup on your local machine. You can do this by installing conda on your local machine and following the same process above on your local machine or you can install it without anaconda.&lt;/p&gt;
+<p>Just like your environment creation, conda is going to find a list of packages it needs to install and ask if it’s ok. Type ‘y’ to proceed with the installation.</p>
 
-&lt;p&gt;Once you have jupyter lab setup on your machine and the server, we’re ready to connect the two. To connect, you need a terminal open that is connected to the server and has your conda environment activated and an additional terminal to run jupyter lab locally. Then follow these steps:&lt;/p&gt;
+<p>To connect to your jupyter notebook remotely, you’ll need to have jupyter lab setup on your local machine. You can do this by installing conda on your local machine and following the same process above on your local machine or you can install it without anaconda.</p>
 
-&lt;ol&gt;
-  &lt;li&gt;On the server, run &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;jupyter lab --no-browser --port=8889&lt;/code&gt;
-    &lt;ul&gt;
-      &lt;li&gt;You probably won’t get port 8889 because it’s busy but jupyter will find an available port and display it on your screen as a URL that starts with localhost.&lt;/li&gt;
-      &lt;li&gt;Example output is below. The higlighted portion is the link you’ll use. Notice that here it does say 8889:&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
+<p>Once you have jupyter lab setup on your machine and the server, we’re ready to connect the two. To connect, you need a terminal open that is connected to the server and has your conda environment activated and an additional terminal to run jupyter lab locally. Then follow these steps:</p>
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/jupyter_example.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+<ol>
+  <li>On the server, run <code class="language-plaintext highlighter-rouge">jupyter lab --no-browser --port=8889</code>
+    <ul>
+      <li>You probably won’t get port 8889 because it’s busy but jupyter will find an available port and display it on your screen as a URL that starts with localhost.</li>
+      <li>Example output is below. The higlighted portion is the link you’ll use. Notice that here it does say 8889:</li>
+    </ul>
+  </li>
+</ol>
 
-&lt;ol&gt;
-  &lt;li&gt;On your local machine, run &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ssh -L localhost:&amp;lt;port number&amp;gt;:localhost:&amp;lt;port number&amp;gt; &amp;lt;netid&amp;gt;@cse-stmi-s1.cse.tamu.edu&lt;/code&gt;
-    &lt;ul&gt;
-      &lt;li&gt;The port number is the one that was specified in step 1. Don’t forget to use your netid when connecting to the server.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;As long as you don’t have any errors, you can copy the URL provided in step 1 over to a new tab in a browser of your choice. At this point, you should be connected and able to interact with the server through the link.&lt;/li&gt;
-&lt;/ol&gt;
+<p><img src="http://localhost:4000/assets/images/jupyter_example.png" alt="" /></p>
 
-&lt;h1 id=&quot;server-etiquette&quot;&gt;Server Etiquette&lt;/h1&gt;
+<ol>
+  <li>On your local machine, run <code class="language-plaintext highlighter-rouge">ssh -L localhost:&lt;port number&gt;:localhost:&lt;port number&gt; &lt;netid&gt;@cse-stmi-s1.cse.tamu.edu</code>
+    <ul>
+      <li>The port number is the one that was specified in step 1. Don’t forget to use your netid when connecting to the server.</li>
+    </ul>
+  </li>
+  <li>As long as you don’t have any errors, you can copy the URL provided in step 1 over to a new tab in a browser of your choice. At this point, you should be connected and able to interact with the server through the link.</li>
+</ol>
 
-&lt;p&gt;If you know that you’re going to be running a large task (i.e. training a model on ImageNet), change the priority of your code so that it doesn’t prevent others from running their tests. You can do this by “renicing” your code. You can use renice to change the priority of all of your jobs with this command:&lt;/p&gt;
+<h1 id="server-etiquette">Server Etiquette</h1>
 
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;renice -n &amp;lt;priority&amp;gt; -u &amp;lt;your username&amp;gt;&lt;/code&gt;&lt;/p&gt;
+<h2 id="renice">renice</h2>
 
-&lt;p&gt;Priorities are set to 0 by default. Essential OS jobs will have a negative priority. If you need to change the priority your code, change it to a high positive number (i.e. 10). If you need to change the priority of a specific job, you can run this:&lt;/p&gt;
+<p>If you know that you’re going to be running a large task (i.e. training a model on ImageNet), change the priority of your code so that it doesn’t prevent others from running their tests. You can do this by “renicing” your code. You can use renice to change the priority of all of your jobs with this command:</p>
 
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;renice -p &amp;lt;pid&amp;gt;&lt;/code&gt;&lt;/p&gt;
+<p><code class="language-plaintext highlighter-rouge">renice -n &lt;priority&gt; -u &lt;your username&gt;</code></p>
 
-&lt;p&gt;You can find the PID of your jobs and monitor their resource usage with htop:&lt;/p&gt;
+<p>Priorities are set to 0 by default. Essential OS jobs will have a negative priority. If you need to change the priority your code, change it to a high positive number (i.e. 10). If you need to change the priority of a specific job, you can run this:</p>
 
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;htop -u &amp;lt;username&amp;gt;&lt;/code&gt;&lt;/p&gt;
+<p><code class="language-plaintext highlighter-rouge">renice -p &lt;pid&gt;</code></p>
 
-&lt;p&gt;For more information about htop or renice, you can use -h to get a short description of the arguments.&lt;/p&gt;
+<p>You can find the PID of your jobs and monitor their resource usage with htop:</p>
 
-&lt;h1 id=&quot;useful-info&quot;&gt;Useful Info&lt;/h1&gt;
+<p><code class="language-plaintext highlighter-rouge">htop -u &lt;username&gt;</code></p>
 
-&lt;ul&gt;
-  &lt;li&gt;On the server, data is located at &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\data&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\olddata&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Ryan King</name></author><category term="Setup" /><category term="Setup" /><category term="Undergraduates" /><category term="New Students" /><summary type="html">Howdy! This page was created to help you get setup with the resources we have here in our lab. If you have any other information you would like to know, please send me a message and let me know.</summary></entry></feed>
+<p>For more information about htop or renice, you can use -h to get a short description of the arguments.</p>
+
+<h2 id="gpustat">gpustat</h2>
+
+<p><strong>Additionally, monitor your GPU usage.</strong> The GPUs are there to be used. However, you shouldn’t be using all the GPUs all the time. To monitor your GPU usage, install gpustat:</p>
+
+<p><code class="language-plaintext highlighter-rouge">conda install -c conda-forge gpustat</code></p>
+
+<p>You can run gpustat from your command line using the following command:</p>
+
+<p><code class="language-plaintext highlighter-rouge">gpustat -pi</code></p>
+
+<p>The <code class="language-plaintext highlighter-rouge">p</code> flag will display the processes being run on each GPU. The <code class="language-plaintext highlighter-rouge">i</code> flag will launch gpustat in interactive mode. If you just want a snapshot of what the GPUs currently are doing, leave the <code class="language-plaintext highlighter-rouge">i</code> flag out. I recommend running this command with the <code class="language-plaintext highlighter-rouge">i</code> flag and placing it somewhere you can see all the time that way you can monitor your GPU usage.</p>
+
+<h1 id="useful-info">Useful Info</h1>
+
+<h2 id="running-code-while-disconnected">Running code while disconnected</h2>
+
+<p>You may want to run your code while you aren’t connected to the server. For example, you may want something to run over night but can’t keep your SSH session open. There are two programs that can be used to run your code in these scenarious: <code class="language-plaintext highlighter-rouge">tmux</code> and <code class="language-plaintext highlighter-rouge">screen</code>. These two programs work very similarly. They both create a terminal that can be detached or reattached as needed. To create a session, just type the name of the program you’d like to run (<code class="language-plaintext highlighter-rouge">tmux</code> or <code class="language-plaintext highlighter-rouge">screen</code>). The new terminal will work exactly the same as your normal terminal except now, when you disconnect from your SSH session, your code will still be running.</p>
+
+<p>Reconnecting is slightly different for <code class="language-plaintext highlighter-rouge">tmux</code> and <code class="language-plaintext highlighter-rouge">screen</code>. For both, you’ll first need to reconnect to the server. Then you’ll do the following to reconnect:</p>
+
+<ul>
+  <li>
+    <p>For <code class="language-plaintext highlighter-rouge">tmux</code>, the command is <code class="language-plaintext highlighter-rouge">tmux attach</code>. This will automatically attach you to a detached tmux session.</p>
+  </li>
+  <li>
+    <p>For <code class="language-plaintext highlighter-rouge">screen</code>, the command is <code class="language-plaintext highlighter-rouge">screen -r</code>. If you have multiple screen sessions, you’ll need to specify the process idea like below: <code class="language-plaintext highlighter-rouge">screen -r &lt;pid&gt;</code></p>
+
+    <p><img src="http://localhost:4000/assets/images/screen_example.png" alt="" /></p>
+  </li>
+</ul>
+
+<p>For more information about <code class="language-plaintext highlighter-rouge">tmux</code>, checkout this <a href="https://tmuxcheatsheet.com/">cheatsheet</a></p>
+
+<p>For more information about <code class="language-plaintext highlighter-rouge">screen</code>, checkout this <a href="https://kapeli.com/cheat_sheets/screen.docset/Contents/Resources/Documents/index">cheatsheet</a></p>
+
+<h2 id="experiment-tracking-weights-and-biases">Experiment Tracking (Weights and Biases)</h2>
+
+<p>If you haven’t heard of Weights and Biases, you need to check them out: https://wandb.ai/. They provide a way to track your experiments, visualize their performance and even perform hyperparameter optimization. It really simple to setup too. Just import the python library <code class="language-plaintext highlighter-rouge">wandb</code>, create the session and log important metrics to wandb. Weights and Biases can run your hyperparamter optimization if you use the <a href="https://docs.python.org/3/library/argparse.html"><code class="language-plaintext highlighter-rouge">argparse</code></a> library to configure your model and training. It’ll even provide a guess a what it thinks your search space should look like when you initialize the sweep.</p>]]></content><author><name>Ryan King</name></author><category term="Setup" /><category term="Setup" /><category term="Undergraduates" /><category term="New Students" /><summary type="html"><![CDATA[This page was created to help you get setup with the resources we have here in our lab. If you have any other information you would like to know, please send me a message and let me know.]]></summary></entry></feed>
