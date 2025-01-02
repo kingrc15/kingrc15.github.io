@@ -17,6 +17,12 @@ var store = [{
         "url": "/computational-graphs/",
         "teaser": null
       },{
+        "title": "Transferable Healthcare Models",
+        "excerpt":"Making Hospital AI Models More Portable: New Research on Transfer Learning in Healthcare Healthcare AI has made impressive strides in recent years, particularly in predicting patient outcomes in intensive care units (ICUs). However, there’s a catch - most of these AI models are trained using data from large hospitals with...","categories": [],
+        "tags": [],
+        "url": "/transferable-healthcare-models/",
+        "teaser": null
+      },{
         "title": "Unimodal Contrastive Pretraining Of Clinical Timeseries",
         "excerpt":"EHR Modeling with Contrastive Learning: A New Approach to Pretraining Clinical Time Series Data By Ryan King, Shivesh Kodali, Conrad Krueger, Tianbao Yang, and Bobak J. Mortazavi Published in Machine Learning for Health In the fast-evolving world of machine learning, the challenge of harnessing Electronic Health Record (EHR) data remains...","categories": [],
         "tags": [],

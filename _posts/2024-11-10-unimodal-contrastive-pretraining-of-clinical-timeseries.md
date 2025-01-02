@@ -57,5 +57,5 @@ This research bridges a critical gap in EHR modeling, making advanced analytics 
 
 Our work is a step forward in the journey toward universal, robust foundation models for healthcare. As machine learning continues to integrate into clinical workflows, approaches like ours will play a pivotal role in unlocking the true potential of EHR data.
 
-[Explore the full paper on GitHub](https://github.com/shiveshchowdary/EHR-ContrastiveLearning)
-[or on Arxiv](https://arxiv.org/abs/2410.09199)
+Explore the full paper on [GitHub](https://github.com/shiveshchowdary/EHR-ContrastiveLearning)
+or on [Arxiv](https://arxiv.org/abs/2410.09199)

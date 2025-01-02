@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-01-02T16:36:36-06:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Ryan King</title><subtitle>An amazing website about me.</subtitle><author><name>Ryan King</name></author><entry><title type="html">Unimodal Contrastive Pretraining Of Clinical Timeseries</title><link href="http://localhost:4000/unimodal-contrastive-pretraining-of-clinical-timeseries/" rel="alternate" type="text/html" title="Unimodal Contrastive Pretraining Of Clinical Timeseries" /><published>2024-11-10T00:00:00-06:00</published><updated>2024-11-10T00:00:00-06:00</updated><id>http://localhost:4000/unimodal-contrastive-pretraining-of-clinical-timeseries</id><content type="html" xml:base="http://localhost:4000/unimodal-contrastive-pretraining-of-clinical-timeseries/"><![CDATA[<h1 id="ehr-modeling-with-contrastive-learning-a-new-approach-to-pretraining-clinical-time-series-data">EHR Modeling with Contrastive Learning: A New Approach to Pretraining Clinical Time Series Data</h1>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-01-02T17:48:57-06:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Ryan King</title><subtitle>An amazing website about me.</subtitle><author><name>Ryan King</name></author><entry><title type="html">Unimodal Contrastive Pretraining Of Clinical Timeseries</title><link href="http://localhost:4000/unimodal-contrastive-pretraining-of-clinical-timeseries/" rel="alternate" type="text/html" title="Unimodal Contrastive Pretraining Of Clinical Timeseries" /><published>2024-11-10T00:00:00-06:00</published><updated>2024-11-10T00:00:00-06:00</updated><id>http://localhost:4000/unimodal-contrastive-pretraining-of-clinical-timeseries</id><content type="html" xml:base="http://localhost:4000/unimodal-contrastive-pretraining-of-clinical-timeseries/"><![CDATA[<h1 id="ehr-modeling-with-contrastive-learning-a-new-approach-to-pretraining-clinical-time-series-data">EHR Modeling with Contrastive Learning: A New Approach to Pretraining Clinical Time Series Data</h1>
 
 <p><strong>By Ryan King, Shivesh Kodali, Conrad Krueger, Tianbao Yang, and Bobak J. Mortazavi</strong><br />
 Published in <em>Machine Learning for Health</em></p>
@@ -66,8 +66,66 @@ By generating augmented “global” and “local” views of the same sequence,
 
 <p>Our work is a step forward in the journey toward universal, robust foundation models for healthcare. As machine learning continues to integrate into clinical workflows, approaches like ours will play a pivotal role in unlocking the true potential of EHR data.</p>
 
-<p><a href="https://github.com/shiveshchowdary/EHR-ContrastiveLearning">Explore the full paper on GitHub</a>
-<a href="https://arxiv.org/abs/2410.09199">or on Arxiv</a></p>]]></content><author><name>Ryan King</name></author><summary type="html"><![CDATA[EHR Modeling with Contrastive Learning: A New Approach to Pretraining Clinical Time Series Data]]></summary></entry><entry><title type="html">Computational Graphs</title><link href="http://localhost:4000/computational-graphs/" rel="alternate" type="text/html" title="Computational Graphs" /><published>2021-11-11T00:00:00-06:00</published><updated>2021-11-11T00:00:00-06:00</updated><id>http://localhost:4000/computational-graphs</id><content type="html" xml:base="http://localhost:4000/computational-graphs/"><![CDATA[<style type="text/css">
+<p>Explore the full paper on <a href="https://github.com/shiveshchowdary/EHR-ContrastiveLearning">GitHub</a>
+or on <a href="https://arxiv.org/abs/2410.09199">Arxiv</a></p>]]></content><author><name>Ryan King</name></author><summary type="html"><![CDATA[EHR Modeling with Contrastive Learning: A New Approach to Pretraining Clinical Time Series Data]]></summary></entry><entry><title type="html">Transferable Healthcare Models</title><link href="http://localhost:4000/transferable-healthcare-models/" rel="alternate" type="text/html" title="Transferable Healthcare Models" /><published>2024-11-09T00:00:00-06:00</published><updated>2024-11-09T00:00:00-06:00</updated><id>http://localhost:4000/transferable-healthcare-models</id><content type="html" xml:base="http://localhost:4000/transferable-healthcare-models/"><![CDATA[<h1 id="making-hospital-ai-models-more-portable-new-research-on-transfer-learning-in-healthcare">Making Hospital AI Models More Portable: New Research on Transfer Learning in Healthcare</h1>
+
+<p>Healthcare AI has made impressive strides in recent years, particularly in predicting patient outcomes in intensive care units (ICUs). However, there’s a catch - most of these AI models are trained using data from large hospitals with substantial resources. What about smaller hospitals that can’t develop their own models from scratch? That’s the challenge tackled in fascinating new research from Texas A&amp;M University.</p>
+
+<h2 id="the-problem-one-hospitals-model-doesnt-fit-all">The Problem: One Hospital’s Model Doesn’t Fit All</h2>
+<p>The researchers identified a crucial issue: medical data varies significantly across different regions of the United States. For instance, they found that:</p>
+
+<ul>
+  <li>Hospitals in the Northeast measure Glasgow Coma Scores more frequently than those in the South</li>
+  <li>Some vital measurements, like FiO2 (fraction of inspired oxygen), show markedly different patterns between hospitals</li>
+  <li>Certain measurements that are routine in one region might be rarely recorded in another</li>
+</ul>
+
+<p>This variation means that an AI model trained at one hospital might perform poorly when used at another - a serious problem if we want to democratize access to AI-powered healthcare tools.</p>
+
+<h2 id="a-new-way-to-test-ai-model-transferability">A New Way to Test AI Model Transferability</h2>
+<p>The researchers developed a benchmark to evaluate how well medical AI models can adapt when moved from one hospital to another. They framed this as a “domain incremental learning” problem - essentially, how can a model learn new patterns without forgetting what it already knows?
+The benchmark tests models on four critical tasks:</p>
+
+<ul>
+  <li>Predicting in-hospital mortality</li>
+  <li>Identifying patient decompensation (sudden deterioration)</li>
+  <li>Estimating length of stay</li>
+  <li>Detecting various medical conditions (phenotyping)</li>
+</ul>
+
+<h2 id="innovative-solutions">Innovative Solutions</h2>
+<p>The team explored several approaches to make models more transferable, including:</p>
+
+<ol>
+  <li>Elastic Weight Consolidation (EWC): This technique helps preserve important features the model learned from its original hospital while adapting to new data.</li>
+  <li>Data Replay: The model periodically reviews a small sample of data from its original training, helping it maintain critical knowledge.</li>
+  <li>A Novel Combined Approach: The researchers developed a new method that merges EWC and data replay, showing better performance than either technique alone.</li>
+</ol>
+
+<h2 id="key-findings">Key Findings</h2>
+<p>The results were enlightening:</p>
+
+<ul>
+  <li>The combined method showed superior performance on simpler tasks like mortality prediction</li>
+  <li>More complex tasks, like predicting length of stay, proved challenging for all approaches</li>
+  <li>Different regions required different strategies for optimal performance</li>
+  <li>The research highlighted specific areas where further innovation is needed</li>
+</ul>
+
+<h2 id="why-this-matters">Why This Matters</h2>
+<p>This research is crucial for several reasons:</p>
+
+<ol>
+  <li>Healthcare Equity: Making AI models more portable could help smaller hospitals access advanced predictive tools without massive investments.</li>
+  <li>Resource Efficiency: Instead of every hospital developing its own models, institutions could build upon and adapt existing ones.</li>
+  <li>Better Patient Care: More reliable transfer of AI models means more hospitals can benefit from advanced predictive capabilities.</li>
+</ol>
+
+<h2 id="looking-forward">Looking Forward</h2>
+<p>While the research shows promising directions for making medical AI more portable, it also highlights remaining challenges. The authors note that future work could focus on developing methods that require even less data transfer between hospitals, addressing privacy concerns.
+This work represents an important step toward making healthcare AI more accessible and effective across different hospital settings. As these techniques continue to evolve, we might see a future where any hospital, regardless of size or resources, can benefit from advanced AI-powered clinical prediction tools.</p>
+
+<p>Explore the full paper on <a href="https://github.com/kingrc15/EHRTransferBenchmark">GitHub</a> or <a href="https://openreview.net/pdf?id=QWhce2zqne">on OpenReview</a></p>]]></content><author><name>Ryan King</name></author><summary type="html"><![CDATA[Making Hospital AI Models More Portable: New Research on Transfer Learning in Healthcare]]></summary></entry><entry><title type="html">Computational Graphs</title><link href="http://localhost:4000/computational-graphs/" rel="alternate" type="text/html" title="Computational Graphs" /><published>2021-11-11T00:00:00-06:00</published><updated>2021-11-11T00:00:00-06:00</updated><id>http://localhost:4000/computational-graphs</id><content type="html" xml:base="http://localhost:4000/computational-graphs/"><![CDATA[<style type="text/css">
   .gist {
     width: 1000px;
   }
