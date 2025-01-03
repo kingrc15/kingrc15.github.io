@@ -13,6 +13,8 @@ This variation means that an AI model trained at one hospital might perform poor
 
 ## A New Way to Test AI Model Transferability
 The researchers developed a benchmark to evaluate how well medical AI models can adapt when moved from one hospital to another. They framed this as a "domain incremental learning" problem - essentially, how can a model learn new patterns without forgetting what it already knows?
+
+
 The benchmark tests models on four critical tasks:
 
  - Predicting in-hospital mortality
