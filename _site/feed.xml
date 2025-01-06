@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-01-03T14:48:50-06:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Ryan King</title><subtitle>An amazing website about me.</subtitle><author><name>Ryan King</name></author><entry><title type="html">Unimodal Contrastive Pretraining Of Clinical Timeseries</title><link href="http://localhost:4000/unimodal-contrastive-pretraining-of-clinical-timeseries/" rel="alternate" type="text/html" title="Unimodal Contrastive Pretraining Of Clinical Timeseries" /><published>2024-11-10T00:00:00-06:00</published><updated>2024-11-10T00:00:00-06:00</updated><id>http://localhost:4000/unimodal-contrastive-pretraining-of-clinical-timeseries</id><content type="html" xml:base="http://localhost:4000/unimodal-contrastive-pretraining-of-clinical-timeseries/"><![CDATA[<h1 id="ehr-modeling-with-contrastive-learning-a-new-approach-to-pretraining-clinical-time-series-data">EHR Modeling with Contrastive Learning: A New Approach to Pretraining Clinical Time Series Data</h1>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-01-06T10:58:08-06:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Ryan King</title><subtitle>An amazing website about me.</subtitle><author><name>Ryan King</name></author><entry><title type="html">Unimodal Contrastive Pretraining Of Clinical Timeseries</title><link href="http://localhost:4000/unimodal-contrastive-pretraining-of-clinical-timeseries/" rel="alternate" type="text/html" title="Unimodal Contrastive Pretraining Of Clinical Timeseries" /><published>2024-11-10T00:00:00-06:00</published><updated>2024-11-10T00:00:00-06:00</updated><id>http://localhost:4000/unimodal-contrastive-pretraining-of-clinical-timeseries</id><content type="html" xml:base="http://localhost:4000/unimodal-contrastive-pretraining-of-clinical-timeseries/"><![CDATA[<h1 id="ehr-modeling-with-contrastive-learning-a-new-approach-to-pretraining-clinical-time-series-data">EHR Modeling with Contrastive Learning: A New Approach to Pretraining Clinical Time Series Data</h1>
 
 <p><strong>By Ryan King, Shivesh Kodali, Conrad Krueger, Tianbao Yang, and Bobak J. Mortazavi</strong><br />
 Published in <em>Machine Learning for Health</em></p>
@@ -126,7 +126,90 @@ or on <a href="https://arxiv.org/abs/2410.09199">Arxiv</a></p>]]></content><auth
 <p>While the research shows promising directions for making medical AI more portable, it also highlights remaining challenges. The authors note that future work could focus on developing methods that require even less data transfer between hospitals, addressing privacy concerns.
 This work represents an important step toward making healthcare AI more accessible and effective across different hospital settings. As these techniques continue to evolve, we might see a future where any hospital, regardless of size or resources, can benefit from advanced AI-powered clinical prediction tools.</p>
 
-<p>Explore the full paper on <a href="https://github.com/kingrc15/EHRTransferBenchmark">GitHub</a> or <a href="https://openreview.net/pdf?id=QWhce2zqne">on OpenReview</a></p>]]></content><author><name>Ryan King</name></author><summary type="html"><![CDATA[Making Hospital AI Models More Portable: New Research on Transfer Learning in Healthcare]]></summary></entry><entry><title type="html">Computational Graphs</title><link href="http://localhost:4000/computational-graphs/" rel="alternate" type="text/html" title="Computational Graphs" /><published>2021-11-11T00:00:00-06:00</published><updated>2021-11-11T00:00:00-06:00</updated><id>http://localhost:4000/computational-graphs</id><content type="html" xml:base="http://localhost:4000/computational-graphs/"><![CDATA[<style type="text/css">
+<p>Explore the full paper on <a href="https://github.com/kingrc15/EHRTransferBenchmark">GitHub</a> or <a href="https://openreview.net/pdf?id=QWhce2zqne">on OpenReview</a></p>]]></content><author><name>Ryan King</name></author><summary type="html"><![CDATA[Making Hospital AI Models More Portable: New Research on Transfer Learning in Healthcare]]></summary></entry><entry><title type="html">Multimodal Contrastive Learning Of Medical Time Series And Notes</title><link href="http://localhost:4000/multimodal-contrastive-learning-of-medical-time-series-and-notes/" rel="alternate" type="text/html" title="Multimodal Contrastive Learning Of Medical Time Series And Notes" /><published>2023-11-15T00:00:00-06:00</published><updated>2023-11-15T00:00:00-06:00</updated><id>http://localhost:4000/multimodal-contrastive-learning-of-medical-time-series-and-notes</id><content type="html" xml:base="http://localhost:4000/multimodal-contrastive-learning-of-medical-time-series-and-notes/"><![CDATA[<h1 id="advancing-icu-care-multimodal-pretraining-of-medical-time-series-and-notes">Advancing ICU Care: Multimodal Pretraining of Medical Time Series and Notes</h1>
+
+<p><strong>By Ryan King, Tianbao Yang, and Bobak J. Mortazavi</strong><br />
+<em>Texas A&amp;M University</em></p>
+
+<p>Modern intensive care units (ICUs) generate vast amounts of patient data—ranging from clinical measurements like vital signs and lab results to textual clinical notes detailing physicians’ observations and treatment plans. Effectively analyzing this data is critical for advancing patient care but remains a challenging task due to data complexity, missing values, and the high cost of annotating ICU data.</p>
+
+<p>Our work, presented at <strong>Machine Learning for Health (ML4H) 2023</strong>, introduces a novel multimodal pretraining approach to tackle these challenges. By aligning clinical time series and notes using self-supervised learning, we demonstrate significant advancements in downstream tasks like in-hospital mortality prediction and phenotyping.</p>
+
+<hr />
+
+<h2 id="challenges-in-icu-data-analysis">Challenges in ICU Data Analysis</h2>
+
+<ul>
+  <li><strong>Data Diversity and Noise:</strong> ICU data varies widely in format (e.g., numeric vs. textual) and quality, often containing noise and missing values.</li>
+  <li><strong>Annotation Cost:</strong> Labeling ICU data is expensive and labor-intensive, requiring domain expertise.</li>
+  <li><strong>Underutilized Modalities:</strong> Existing methods often focus on a single data type, neglecting the complementary nature of clinical notes and measurements.</li>
+</ul>
+
+<hr />
+
+<h2 id="our-approach-multimodal-pretraining">Our Approach: Multimodal Pretraining</h2>
+
+<p>We propose a <strong>self-supervised multimodal pretraining framework</strong> that simultaneously aligns and reconstructs clinical measurements and notes. Key components include:</p>
+
+<h3 id="1-alignment-pretraining-with-contrastive-learning">1. <strong>Alignment Pretraining with Contrastive Learning</strong></h3>
+<p>We align measurement and text representations by maximizing the similarity between embeddings from the same ICU stay while minimizing similarity with embeddings from other stays. This ensures the two modalities are mapped into a shared semantic space.</p>
+
+<p><img src="http://localhost:4000/assets/images/contrastive-med-ts-and-notes.png" alt="" /></p>
+
+<h3 id="2-masked-pretraining-for-reconstruction">2. <strong>Masked Pretraining for Reconstruction</strong></h3>
+<p>Inspired by models like BERT, we randomly mask tokens in clinical notes and measurement values, challenging the model to reconstruct the missing information. This enhances its ability to learn meaningful representations from incomplete data.</p>
+
+<hr />
+
+<h2 id="experimental-results">Experimental Results</h2>
+
+<p>We evaluated our model on the <strong>MIMIC-III dataset</strong>, a benchmark dataset for ICU prediction tasks. Key results include:</p>
+
+<h3 id="in-hospital-mortality-prediction"><strong>In-Hospital Mortality Prediction</strong></h3>
+<ul>
+  <li>Our pretrained model improved AUC-ROC by <strong>0.17</strong> and AUC-PR by <strong>0.1</strong> when only 1% of labeled data was available.</li>
+  <li>The model achieved near state-of-the-art performance even in semi-supervised settings, outperforming baselines.</li>
+</ul>
+
+<h3 id="phenotyping"><strong>Phenotyping</strong></h3>
+<ul>
+  <li>For multi-class, multi-label classification of 25 phenotypes, our approach demonstrated improved micro and macro AUC scores, particularly with limited labeled data.</li>
+</ul>
+
+<h3 id="zero-shot-evaluation"><strong>Zero-Shot Evaluation</strong></h3>
+<p>Without fine-tuning, our model achieved an AUC-ROC of <strong>0.709</strong> and AUC-PR of <strong>0.214</strong> for mortality prediction—a promising step toward deploying pretrained models in real-world settings.</p>
+
+<hr />
+
+<h2 id="why-it-matters">Why It Matters</h2>
+
+<p>By leveraging both clinical notes and measurements, our method captures richer patient representations, making it more adaptable to diverse ICU scenarios. The ability to perform well with minimal labeled data reduces the burden of data annotation, paving the way for scalable deployment in healthcare systems.</p>
+
+<hr />
+
+<h2 id="limitations-and-future-work">Limitations and Future Work</h2>
+
+<p>While effective, our approach has limitations:</p>
+<ul>
+  <li>The expressiveness of the text encoder is constrained during alignment.</li>
+  <li>Performance on some phenotyping tasks plateaued with higher percentages of labeled data, potentially due to catastrophic forgetting.</li>
+</ul>
+
+<p>Future research could explore simultaneous optimization of both encoders and evaluate additional zero-shot tasks across other datasets.</p>
+
+<hr />
+
+<h2 id="open-source-code">Open Source Code</h2>
+
+<p>Our implementation is available on GitHub:<br />
+<a href="https://github.com/kingrc15/multimodal-clinical-pretraining"><strong>Multimodal Clinical Pretraining</strong></a></p>
+
+<p>The paper can be found here:<br />
+<a href="https://arxiv.org/abs/2312.06855"><strong>arXiv</strong></a></p>
+
+<hr />
+
+<p>This work represents a significant step toward making ICU data more actionable, reducing annotation costs, and improving critical care outcomes. If you’re interested in multimodal learning or healthcare AI, we’d love to hear your thoughts and collaborate on future research!</p>]]></content><author><name>Ryan King</name></author><summary type="html"><![CDATA[Advancing ICU Care: Multimodal Pretraining of Medical Time Series and Notes]]></summary></entry><entry><title type="html">Computational Graphs</title><link href="http://localhost:4000/computational-graphs/" rel="alternate" type="text/html" title="Computational Graphs" /><published>2021-11-11T00:00:00-06:00</published><updated>2021-11-11T00:00:00-06:00</updated><id>http://localhost:4000/computational-graphs</id><content type="html" xml:base="http://localhost:4000/computational-graphs/"><![CDATA[<style type="text/css">
   .gist {
     width: 1000px;
   }

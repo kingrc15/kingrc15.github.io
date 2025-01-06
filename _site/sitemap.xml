@@ -13,6 +13,10 @@
 <lastmod>2021-11-11T00:00:00-06:00</lastmod>
 </url>
 <url>
+<loc>http://localhost:4000/multimodal-contrastive-learning-of-medical-time-series-and-notes/</loc>
+<lastmod>2023-11-15T00:00:00-06:00</lastmod>
+</url>
+<url>
 <loc>http://localhost:4000/transferable-healthcare-models/</loc>
 <lastmod>2024-11-09T00:00:00-06:00</lastmod>
 </url>
@@ -28,6 +32,9 @@
 </url>
 <url>
 <loc>http://localhost:4000/year-archive/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/page2/</loc>
 </url>
 <url>
 <loc>http://localhost:4000/Net.html</loc>

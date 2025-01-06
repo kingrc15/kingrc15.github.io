@@ -17,6 +17,12 @@ var store = [{
         "url": "/computational-graphs/",
         "teaser": null
       },{
+        "title": "Multimodal Contrastive Learning Of Medical Time Series And Notes",
+        "excerpt":"Advancing ICU Care: Multimodal Pretraining of Medical Time Series and Notes By Ryan King, Tianbao Yang, and Bobak J. Mortazavi Texas A&amp;M University Modern intensive care units (ICUs) generate vast amounts of patient data—ranging from clinical measurements like vital signs and lab results to textual clinical notes detailing physicians’ observations...","categories": [],
+        "tags": [],
+        "url": "/multimodal-contrastive-learning-of-medical-time-series-and-notes/",
+        "teaser": null
+      },{
         "title": "Transferable Healthcare Models",
         "excerpt":"Making Hospital AI Models More Portable: New Research on Transfer Learning in Healthcare Healthcare AI has made impressive strides in recent years, particularly in predicting patient outcomes in intensive care units (ICUs). However, there’s a catch - most of these AI models are trained using data from large hospitals with...","categories": [],
         "tags": [],
