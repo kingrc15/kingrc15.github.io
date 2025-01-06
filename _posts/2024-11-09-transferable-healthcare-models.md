@@ -1,6 +1,6 @@
 # Making Hospital AI Models More Portable: New Research on Transfer Learning in Healthcare
 
-Healthcare AI has made impressive strides in recent years, particularly in predicting patient outcomes in intensive care units (ICUs). However, there's a catch - most of these AI models are trained using data from large hospitals with substantial resources. What about smaller hospitals that can't develop their own models from scratch? That's the challenge tackled in fascinating new research from Texas A&M University.
+Healthcare AI has made impressive strides in recent years, particularly in predicting patient outcomes in intensive care units (ICUs). However, there's a catch - most of these AI models are trained using data from large hospitals with substantial resources. What about smaller hospitals that can't develop their own models from scratch? 
 
 ## The Problem: One Hospital's Model Doesn't Fit All
 We identified a crucial issue: medical data varies significantly across different regions of the United States. For instance, they found that:
