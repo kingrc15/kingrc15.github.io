@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-01-06T10:58:08-06:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Ryan King</title><subtitle>An amazing website about me.</subtitle><author><name>Ryan King</name></author><entry><title type="html">Unimodal Contrastive Pretraining Of Clinical Timeseries</title><link href="http://localhost:4000/unimodal-contrastive-pretraining-of-clinical-timeseries/" rel="alternate" type="text/html" title="Unimodal Contrastive Pretraining Of Clinical Timeseries" /><published>2024-11-10T00:00:00-06:00</published><updated>2024-11-10T00:00:00-06:00</updated><id>http://localhost:4000/unimodal-contrastive-pretraining-of-clinical-timeseries</id><content type="html" xml:base="http://localhost:4000/unimodal-contrastive-pretraining-of-clinical-timeseries/"><![CDATA[<h1 id="ehr-modeling-with-contrastive-learning-a-new-approach-to-pretraining-clinical-time-series-data">EHR Modeling with Contrastive Learning: A New Approach to Pretraining Clinical Time Series Data</h1>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-01-06T11:04:32-06:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Ryan King</title><subtitle>An amazing website about me.</subtitle><author><name>Ryan King</name></author><entry><title type="html">Unimodal Contrastive Pretraining Of Clinical Timeseries</title><link href="http://localhost:4000/unimodal-contrastive-pretraining-of-clinical-timeseries/" rel="alternate" type="text/html" title="Unimodal Contrastive Pretraining Of Clinical Timeseries" /><published>2024-11-10T00:00:00-06:00</published><updated>2024-11-10T00:00:00-06:00</updated><id>http://localhost:4000/unimodal-contrastive-pretraining-of-clinical-timeseries</id><content type="html" xml:base="http://localhost:4000/unimodal-contrastive-pretraining-of-clinical-timeseries/"><![CDATA[<h1 id="ehr-modeling-with-contrastive-learning-a-new-approach-to-pretraining-clinical-time-series-data">EHR Modeling with Contrastive Learning: A New Approach to Pretraining Clinical Time Series Data</h1>
 
 <p><strong>By Ryan King, Shivesh Kodali, Conrad Krueger, Tianbao Yang, and Bobak J. Mortazavi</strong><br />
 Published in <em>Machine Learning for Health</em></p>
@@ -72,7 +72,7 @@ or on <a href="https://arxiv.org/abs/2410.09199">Arxiv</a></p>]]></content><auth
 <p>Healthcare AI has made impressive strides in recent years, particularly in predicting patient outcomes in intensive care units (ICUs). However, there’s a catch - most of these AI models are trained using data from large hospitals with substantial resources. What about smaller hospitals that can’t develop their own models from scratch? That’s the challenge tackled in fascinating new research from Texas A&amp;M University.</p>
 
 <h2 id="the-problem-one-hospitals-model-doesnt-fit-all">The Problem: One Hospital’s Model Doesn’t Fit All</h2>
-<p>The researchers identified a crucial issue: medical data varies significantly across different regions of the United States. For instance, they found that:</p>
+<p>We identified a crucial issue: medical data varies significantly across different regions of the United States. For instance, they found that:</p>
 
 <ul>
   <li>Hospitals in the Northeast measure Glasgow Coma Scores more frequently than those in the South</li>
@@ -83,7 +83,7 @@ or on <a href="https://arxiv.org/abs/2410.09199">Arxiv</a></p>]]></content><auth
 <p>This variation means that an AI model trained at one hospital might perform poorly when used at another - a serious problem if we want to democratize access to AI-powered healthcare tools.</p>
 
 <h2 id="a-new-way-to-test-ai-model-transferability">A New Way to Test AI Model Transferability</h2>
-<p>The researchers developed a benchmark to evaluate how well medical AI models can adapt when moved from one hospital to another. They framed this as a “domain incremental learning” problem - essentially, how can a model learn new patterns without forgetting what it already knows?</p>
+<p>We developed a benchmark to evaluate how well medical AI models can adapt when moved from one hospital to another. We framed this as a “domain incremental learning” problem - essentially, how can a model learn new patterns without forgetting what it already knows?</p>
 
 <p>The benchmark tests models on four critical tasks:</p>
 
@@ -95,12 +95,12 @@ or on <a href="https://arxiv.org/abs/2410.09199">Arxiv</a></p>]]></content><auth
 </ul>
 
 <h2 id="innovative-solutions">Innovative Solutions</h2>
-<p>The team explored several approaches to make models more transferable, including:</p>
+<p>We explored several approaches to make models more transferable, including:</p>
 
 <ol>
   <li>Elastic Weight Consolidation (EWC): This technique helps preserve important features the model learned from its original hospital while adapting to new data.</li>
   <li>Data Replay: The model periodically reviews a small sample of data from its original training, helping it maintain critical knowledge.</li>
-  <li>A Novel Combined Approach: The researchers developed a new method that merges EWC and data replay, showing better performance than either technique alone.</li>
+  <li>A Novel Combined Approach: We developed a new method that merges EWC and data replay, showing better performance than either technique alone.</li>
 </ol>
 
 <h2 id="key-findings">Key Findings</h2>
@@ -110,7 +110,7 @@ or on <a href="https://arxiv.org/abs/2410.09199">Arxiv</a></p>]]></content><auth
   <li>The combined method showed superior performance on simpler tasks like mortality prediction</li>
   <li>More complex tasks, like predicting length of stay, proved challenging for all approaches</li>
   <li>Different regions required different strategies for optimal performance</li>
-  <li>The research highlighted specific areas where further innovation is needed</li>
+  <li>We highlighted specific areas where further innovation is needed</li>
 </ul>
 
 <h2 id="why-this-matters">Why This Matters</h2>
@@ -123,7 +123,7 @@ or on <a href="https://arxiv.org/abs/2410.09199">Arxiv</a></p>]]></content><auth
 </ol>
 
 <h2 id="looking-forward">Looking Forward</h2>
-<p>While the research shows promising directions for making medical AI more portable, it also highlights remaining challenges. The authors note that future work could focus on developing methods that require even less data transfer between hospitals, addressing privacy concerns.
+<p>While the research shows promising directions for making medical AI more portable, it also highlights remaining challenges. We note that future work could focus on developing methods that require even less data transfer between hospitals, addressing privacy concerns.
 This work represents an important step toward making healthcare AI more accessible and effective across different hospital settings. As these techniques continue to evolve, we might see a future where any hospital, regardless of size or resources, can benefit from advanced AI-powered clinical prediction tools.</p>
 
 <p>Explore the full paper on <a href="https://github.com/kingrc15/EHRTransferBenchmark">GitHub</a> or <a href="https://openreview.net/pdf?id=QWhce2zqne">on OpenReview</a></p>]]></content><author><name>Ryan King</name></author><summary type="html"><![CDATA[Making Hospital AI Models More Portable: New Research on Transfer Learning in Healthcare]]></summary></entry><entry><title type="html">Multimodal Contrastive Learning Of Medical Time Series And Notes</title><link href="http://localhost:4000/multimodal-contrastive-learning-of-medical-time-series-and-notes/" rel="alternate" type="text/html" title="Multimodal Contrastive Learning Of Medical Time Series And Notes" /><published>2023-11-15T00:00:00-06:00</published><updated>2023-11-15T00:00:00-06:00</updated><id>http://localhost:4000/multimodal-contrastive-learning-of-medical-time-series-and-notes</id><content type="html" xml:base="http://localhost:4000/multimodal-contrastive-learning-of-medical-time-series-and-notes/"><![CDATA[<h1 id="advancing-icu-care-multimodal-pretraining-of-medical-time-series-and-notes">Advancing ICU Care: Multimodal Pretraining of Medical Time Series and Notes</h1>
