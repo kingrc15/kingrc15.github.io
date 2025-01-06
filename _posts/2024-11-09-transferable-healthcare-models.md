@@ -3,7 +3,7 @@
 Healthcare AI has made impressive strides in recent years, particularly in predicting patient outcomes in intensive care units (ICUs). However, there's a catch - most of these AI models are trained using data from large hospitals with substantial resources. What about smaller hospitals that can't develop their own models from scratch? 
 
 ## The Problem: One Hospital's Model Doesn't Fit All
-We identified a crucial issue: medical data varies significantly across different regions of the United States. For instance, they found that:
+We identified a crucial issue: medical data varies significantly across different regions of the United States. For instance, we found that:
 
  - Hospitals in the Northeast measure Glasgow Coma Scores more frequently than those in the South
  - Some vital measurements, like FiO2 (fraction of inspired oxygen), show markedly different patterns between hospitals
