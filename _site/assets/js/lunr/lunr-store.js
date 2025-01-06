@@ -1,4 +1,10 @@
 var store = [{
+        "title": "First Post",
+        "excerpt":"This is a post made by Major.  ","categories": [],
+        "tags": [],
+        "url": "/generated_posts/test_post/",
+        "teaser": null
+      },{
         "title": "New Student Resources",
         "excerpt":"This page was created to help you get setup with the resources we have here in our lab. If you have any other information you would like to know, please send me a message and let me know. Server Access Connect to the Server Environment Setup Install Jupyter Lab Server...","categories": ["Setup"],
         "tags": ["Setup","Undergraduates","New Students"],
