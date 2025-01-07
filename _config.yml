@@ -88,7 +88,7 @@ social:
 analytics:
   provider               : google # false (default), "google", "google-universal", "google-gtag", "custom"
   google:
-    tracking_id          :
+    tracking_id          : G-B2M8D9XS21
     anonymize_ip         : # true, false (default)
 
 
@@ -284,3 +284,8 @@ defaults:
       comments: # true
       share: true
       related: true
+
+collections:
+  generated_posts:
+    output: true
+    permalink: /:collection/:name/
