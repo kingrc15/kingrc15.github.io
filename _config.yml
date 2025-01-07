@@ -288,3 +288,4 @@ defaults:
 collections:
   generated_posts:
     output: true
+    permalink: /:collection/:name/

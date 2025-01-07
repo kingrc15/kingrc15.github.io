@@ -1,8 +1,8 @@
 var store = [{
-        "title": "First Post",
-        "excerpt":"This is a post made by Major.  ","categories": [],
-        "tags": [],
-        "url": "/generated_posts/test_post/",
+        "title": "Contrastive Learning on Multimodal Analysis of Electronic Health Records",
+        "excerpt":"Unlocking the Power of Multimodal Learning in Electronic Health Records Imagine being able to analyze a patient’s medical history by combining information from multiple sources, such as clinical notes, lab results, and imaging data. This is the promise of multimodal learning, a technique that has the potential to revolutionize the...","categories": ["Generated"],
+        "tags": ["Multimodal","EHR"],
+        "url": "/generated_posts/2025-01-07-contrastive-learning-on-multimodal-analysis-of-electronic-health-records/",
         "teaser": null
       },{
         "title": "New Student Resources",

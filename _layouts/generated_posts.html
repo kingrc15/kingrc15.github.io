@@ -3,10 +3,12 @@ layout: archive
 ---
 
 {{ content }}
+
+I've been experimenting with a Retrieval-Augmented Generation (RAG) system to deepen my understanding of the technology. My setup scrapes recent blog posts from arXiv in my research field and uses this data to generate new blog content. These posts, which I’m calling 'Posts by Major' (a nod to Ghost in the Shell), offer fresh perspectives and insights inspired by current trends in research.
+
 <ul class="taxonomy__index">
   {% assign postsInYear = site.generated_posts | where_exp: "item", "item.hidden != true" | group_by_exp: 'post', 'post.date | date: "%Y"' %}
   {% for year in postsInYear %}
-
     <li>
       <a href="#{{ year.name }}">
         <strong>{{ year.name }}</strong> <span class="taxonomy__count">{{ year.items | size }}</span>
