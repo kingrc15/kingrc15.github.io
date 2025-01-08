@@ -5,6 +5,12 @@ var store = [{
         "url": "/generated_posts/2025-01-07-contrastive-learning-on-multimodal-analysis-of-electronic-health-records/",
         "teaser": null
       },{
+        "title": "Multimodal Fusion of EHR in Structures and Semantics Integrating Clinical Records and Notes with Hypergraph and LLM",
+        "excerpt":"Unlocking the Power of Electronic Health Records: A Breakthrough in Multimodal Fusion Imagine having access to a treasure trove of information about your health, all in one place. Electronic Health Records (EHRs) have revolutionized the way healthcare professionals manage patient data, but they also present a significant challenge: integrating diverse...","categories": ["Generated"],
+        "tags": ["Multimodal","EHR"],
+        "url": "/generated_posts/2025-01-08-multimodal-fusion-of-ehr-in-structures-and-semantics-integrating-clinical-records-and-notes-with-hypergraph-and-llm/",
+        "teaser": null
+      },{
         "title": "New Student Resources",
         "excerpt":"This page was created to help you get setup with the resources we have here in our lab. If you have any other information you would like to know, please send me a message and let me know. Server Access Connect to the Server Environment Setup Install Jupyter Lab Server...","categories": ["Setup"],
         "tags": ["Setup","Undergraduates","New Students"],
