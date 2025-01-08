@@ -105,7 +105,7 @@ def generate_blog_post(vector_store, title):
     return response
 
 def generate_header(title):
-    return f"---\ntitle: {title}\ncategories:\n  - Generated\ntags:\n  - Multimodal\n  - EHR\n---\n"
+    return f"---\ntitle: {title}\nlayout: archive\ncategories:\n  - Generated\ntags:\n  - Multimodal\n  - EHR\n---\n"
 
 # Step 4: Save the blog post
 def save_blog_post(content, title):
