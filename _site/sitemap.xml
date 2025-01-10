@@ -69,7 +69,11 @@
 </url>
 <url>
 <loc>http://localhost:4000/assets/research_papers/Evidencebased_multimodal_fusion_on_structured_EHRs_and_freetext_notes_for_ICU_outcome_prediction.pdf</loc>
+<<<<<<< HEAD
 <lastmod>2025-01-10T10:26:03-06:00</lastmod>
+=======
+<lastmod>2025-01-10T10:18:55-06:00</lastmod>
+>>>>>>> e53ecc7 (new blog)
 </url>
 <url>
 <loc>http://localhost:4000/assets/research_papers/Multimodal_Fusion_of_EHR_in_Structures_and_Semantics_Integrating_Clinical_Records_and_Notes_with_Hypergraph_and_LLM.pdf</loc>
