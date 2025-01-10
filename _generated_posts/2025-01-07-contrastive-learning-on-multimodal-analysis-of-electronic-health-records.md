@@ -29,3 +29,7 @@ The potential applications of multimodal learning in EHRs are vast. By analyzing
 **Conclusion**
 
 The paper by Cai et al. represents a significant step forward in the development of multimodal learning for EHR analysis. By demonstrating the effectiveness of a novel approach to multimodal learning, the authors have opened up new avenues for research and potential applications in healthcare. As the field continues to evolve, we can expect to see more innovative solutions that leverage the power of multimodal learning to
+
+**Learn More**
+
+The link to their paper can be found here: [**arXiv**](https://arxiv.org/abs/2403.14926)

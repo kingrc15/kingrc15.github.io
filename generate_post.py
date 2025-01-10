@@ -48,7 +48,7 @@ def integrate_pdfs_to_vector_store(pdf_folder):
 
 
 # Step 3: Generate a blog post
-def generate_blog_post(vector_store, title):
+def generate_blog_post(vector_store, title, link):
     """Generates a blog post using RetrievalQA and LangChain."""
     model_id = "/scratch/models/meta-llama/Llama-3.2-3B-Instruct"
 
@@ -101,11 +101,14 @@ def generate_blog_post(vector_store, title):
     while len(response) == 0:
         response = qa_chain.run(prompt)
 
-    response = generate_header(title) + response
+    response = generate_header(title) + response + generate_footer(link)
     return response
 
 def generate_header(title):
-    return f"---\ntitle: {title}\nlayout: archive\ncategories:\n  - Generated\ntags:\n  - Multimodal\n  - EHR\n---\n"
+    return f"---\ntitle: {title}\nlayout: archive\ncategories:\n  - Generated\ntags:\n  - Multimodal\n  - EHR\n---\n\n"
+
+def generate_footer(link):
+    return f"\n\n**Learn More**\n\nThe link to their paper can be found here: [**arXiv**]({link})"
 
 # Step 4: Save the blog post
 def save_blog_post(content, title):
@@ -126,12 +129,12 @@ def remove_special_characters(input_string):
     return cleaned_string
 
 # Main script
-def main_with_pdfs(pdf_folder, title):
+def main_with_pdfs(pdf_folder, title, link):
     print("Updating vector store with PDF content...")
     vector_store = integrate_pdfs_to_vector_store(pdf_folder)
 
     print("Generating blog post...")
-    blog_post = generate_blog_post(vector_store, title)
+    blog_post = generate_blog_post(vector_store, title, link)
 
     return blog_post
     
@@ -197,7 +200,7 @@ if __name__ == "__main__":
             download_pdf(pdf_url, pdf_folder_path, title)
             break  # Stop after finding the first paper not in the folder
 
-    blog_post = main_with_pdfs(pdf_folder_path, title)
+    blog_post = main_with_pdfs(pdf_folder_path, title, pdf_url)
 
     print("Saving blog post...")
     save_blog_post(blog_post, title)

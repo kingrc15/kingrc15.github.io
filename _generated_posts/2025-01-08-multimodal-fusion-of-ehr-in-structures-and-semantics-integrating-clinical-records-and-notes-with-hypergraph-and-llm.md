@@ -34,3 +34,7 @@ The potential impact of MINGLE is vast. By integrating structured and unstructur
 1. **Improve Patient Care**: More accurate and comprehensive patient representations can lead to better decision-making and improved patient outcomes.
 2. **Enhance Research**: MINGLE can facilitate the analysis of large-scale EHR datasets, enabling researchers to identify patterns and trends that may inform new treatments and therapies.
 3. **Streamline Clinical Workflows**: By autom
+
+**Learn More**
+
+The link to their paper can be found here: [**arXiv**](https://arxiv.org/abs/2403.08818)
