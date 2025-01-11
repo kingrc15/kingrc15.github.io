@@ -94,7 +94,11 @@ def generate_blog_post(vector_store, title, link):
         Key findings and contributions of the paper.
         Any potential real-world applications or impact of the research.
         A conclusion that ties everything together, highlighting the significance of the work and its potential future developments.
-        Ensure that the content is informative yet easy to understand for a wide audience, and explain any complex terms or concepts in simple language."""
+        Ensure that the content is informative yet easy to understand for a wide audience, and explain any complex terms or concepts in simple language.
+
+        Try to avoid using these phrases:
+        1. It's important to note 2. Delve into 3. Tapestry 4. Bustling 5. In summary 6. Remember that… 7. Take a dive into 8. Navigating (eg, "Navigating the landscape," "Navigating the complexities of") 9. Landscape (eg, "The landscape of.. .") 10. Testament (eg, "a testament to...") 11. In the world of 12. Realm 13. Embark 14. Analogies to being a conductor or to music (eg, "virtuoso," "symphony") 15. Colons (:) 16. Vibrant 17. Metropolis 18. Firstly 19. Moreover 20. Crucial 21. To consider 22. Essential 23. There are a few considerations 24. Ensure 25. It's essential to 26. Furthermore 27. Vital 28. Keen 29. Fancy 30. As a professional 31. However 32. Therefore 33. Additionally 34. Specifically 35. Generally 36. consequently 37. Importantly 38. Similarly 39. nevertheless 40. As a result 41. Indeed 42. Thus 43. Alternatively 44. Notably 45. As well as 46. Despite 47. Essentially 48. While 49 . Unless 50. Also 51. Even though 52. Because 53. In contrast 54. Although 55. In order to 56. Due to 57. Even if 58. Given that 59. Arguably 60. You may want to 61. This is not an exhaustive list 62. You could consider 63. On the other hand 64. As previously mentioned 65. It's worth noting that 66. To summarize 67. Ultimately 68. To put it simply 69. Pesky 70. Promptly 71. Dive into 72. In today's digital 73. Reverberate 74. Enhance 75. Emphasise / Emphasize 76. Hustle and bustle 77. Revolutionize 78. Foster 79. Labyrinthine 80. Moist 81. Remnant 82. Subsequently 83. Nestled 84. Game changer 85. Labyrinth 86. Gossamer 87. Enigma 88. Whispering 89. Sights unseen 90. Sounds unheard 91. Dance 92. Metamorphosis 93. Indelible 94. My friend 95. Fellow [nickname] 96. In conclusion 97. Unlocking
+        """
     )
 
     response = ""

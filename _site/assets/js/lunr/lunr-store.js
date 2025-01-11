@@ -23,6 +23,12 @@ var store = [{
         "url": "/generated_posts/2025-01-10-evidencebased-multimodal-fusion-on-structured-ehrs-and-freetext-notes-for-icu-outcome-prediction/",
         "teaser": null
       },{
+        "title": "REALM RAGDriven Enhancement of Multimodal Electronic Health Records Analysis via Large Language Models",
+        "excerpt":"Unlocking the Power of Multimodal Electronic Health Records with REALM The integration of electronic health records (EHRs) has revolutionized the way healthcare professionals access and analyze patient data. However, one significant challenge remains: harnessing the full potential of this data to improve patient outcomes. Researchers have been working to address...","categories": ["Generated"],
+        "tags": ["Multimodal","EHR"],
+        "url": "/generated_posts/2025-01-11-realm-ragdriven-enhancement-of-multimodal-electronic-health-records-analysis-via-large-language-models/",
+        "teaser": null
+      },{
         "title": "New Student Resources",
         "excerpt":"This page was created to help you get setup with the resources we have here in our lab. If you have any other information you would like to know, please send me a message and let me know. Server Access Connect to the Server Environment Setup Install Jupyter Lab Server...","categories": ["Setup"],
         "tags": ["Setup","Undergraduates","New Students"],
