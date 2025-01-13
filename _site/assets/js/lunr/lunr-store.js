@@ -14,12 +14,6 @@ var store = [{
         "title": "Evidencebased multimodal fusion on structured EHRs and freetext notes for ICU outcome prediction",
         "excerpt":"Unlocking the Power of Electronic Health Records: Improving ICU Outcome Prediction Imagine being able to predict with high accuracy which patients in an Intensive Care Unit (ICU) are likely to have a poor outcome, allowing healthcare professionals to provide more targeted and effective care. This is the challenge tackled by...","categories": ["Generated"],
         "tags": ["Multimodal","EHR"],
-        "url": "/generated_posts/2025-01-09-evidencebased-multimodal-fusion-on-structured-ehrs-and-freetext-notes-for-icu-outcome-prediction/",
-        "teaser": null
-      },{
-        "title": "Evidencebased multimodal fusion on structured EHRs and freetext notes for ICU outcome prediction",
-        "excerpt":"Unlocking the Power of Electronic Health Records: Improving ICU Outcome Prediction Imagine being able to predict with high accuracy which patients in an Intensive Care Unit (ICU) are likely to have a poor outcome, allowing healthcare professionals to provide more targeted and effective care. This is the challenge tackled by...","categories": ["Generated"],
-        "tags": ["Multimodal","EHR"],
         "url": "/generated_posts/2025-01-10-evidencebased-multimodal-fusion-on-structured-ehrs-and-freetext-notes-for-icu-outcome-prediction/",
         "teaser": null
       },{
@@ -27,6 +21,12 @@ var store = [{
         "excerpt":"Unlocking the Power of Multimodal Electronic Health Records with REALM The integration of electronic health records (EHRs) has revolutionized the way healthcare professionals access and analyze patient data. However, one significant challenge remains: harnessing the full potential of this data to improve patient outcomes. Researchers have been working to address...","categories": ["Generated"],
         "tags": ["Multimodal","EHR"],
         "url": "/generated_posts/2025-01-11-realm-ragdriven-enhancement-of-multimodal-electronic-health-records-analysis-via-large-language-models/",
+        "teaser": null
+      },{
+        "title": "PromptEHR Conditional Electronic Healthcare Records Generation with Prompt Learning",
+        "excerpt":"Revolutionizing Healthcare Records: A New Approach to Synthetic Patient Data Generation The medical field has made significant progress in recent years, but one challenge has remained a constant: accessing sensitive patient data without compromising patient privacy. Traditional methods of accessing and utilizing this data have been hindered by regulations and...","categories": ["Generated"],
+        "tags": ["Multimodal","EHR"],
+        "url": "/generated_posts/2025-01-13-promptehr-conditional-electronic-healthcare-records-generation-with-prompt-learning/",
         "teaser": null
       },{
         "title": "New Student Resources",
