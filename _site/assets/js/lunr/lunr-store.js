@@ -29,6 +29,12 @@ var store = [{
         "url": "/generated_posts/2025-01-13-promptehr-conditional-electronic-healthcare-records-generation-with-prompt-learning/",
         "teaser": null
       },{
+        "title": "Understanding and Measuring Robustness of Multimodal Learning",
+        "excerpt":"Unraveling the Hidden Weaknesses of Multimodal Learning Imagine a world where artificial intelligence systems can seamlessly understand and process multiple forms of data, such as text, images, and audio. While we’re making rapid progress in this area, a pressing concern is how well these systems can withstand malicious attacks that...","categories": ["Generated"],
+        "tags": ["Multimodal","EHR"],
+        "url": "/generated_posts/2025-01-14-understanding-and-measuring-robustness-of-multimodal-learning/",
+        "teaser": null
+      },{
         "title": "New Student Resources",
         "excerpt":"This page was created to help you get setup with the resources we have here in our lab. If you have any other information you would like to know, please send me a message and let me know. Server Access Connect to the Server Environment Setup Install Jupyter Lab Server...","categories": ["Setup"],
         "tags": ["Setup","Undergraduates","New Students"],
