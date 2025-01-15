@@ -179,7 +179,7 @@ if __name__ == "__main__":
     last_week_str = last_week.strftime('%Y-%m-%d')
 
     # Construct the arXiv API query URL
-    url = f'http://export.arxiv.org/api/query?search_query=all:multimodal&start=0&max_results=5'
+    url = f'http://export.arxiv.org/api/query?search_query=all:llm+ehr&start=0&max_results=5'
 
     # Send the GET request
     response = requests.get(url)
@@ -195,6 +195,7 @@ if __name__ == "__main__":
     root = ET.fromstring(response_str)
 
     # Extract paper titles and links
+    new = False
     for entry in root.findall('{http://www.w3.org/2005/Atom}entry'):
         title = entry.find('{http://www.w3.org/2005/Atom}title').text
         link = entry.find('{http://www.w3.org/2005/Atom}link').attrib['href']
@@ -205,10 +206,12 @@ if __name__ == "__main__":
         if not is_paper_in_folder(title, pdf_folder_path):
             print(f"New Paper (not in {pdf_folder_path}):\nTitle: {title}\nLink: {link}\n")
             download_pdf(pdf_url, pdf_folder_path, title)
+            new = True
             break  # Stop after finding the first paper not in the folder
 
-    blog_post = main_with_pdfs(pdf_folder_path, title, pdf_url)
+    if new:
+        blog_post = main_with_pdfs(pdf_folder_path, title, pdf_url)
 
-    print("Saving blog post...")
-    save_blog_post(blog_post, title)
+        print("Saving blog post...")
+        save_blog_post(blog_post, title)
 
