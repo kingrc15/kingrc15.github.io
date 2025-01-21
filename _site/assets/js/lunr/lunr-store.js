@@ -47,6 +47,12 @@ var store = [{
         "url": "/generated_posts/2025-01-16-ehrmonize-a-framework-for-medical-concept-abstraction-from-electronic-health-records-using-large-language-models/",
         "teaser": null
       },{
+        "title": "LLMsbased FewShot Disease Predictions using EHR A Novel Approach Combining Predictive Agent Reasoning and Critical Agent Instruction",
+        "excerpt":"Unlocking the Power of Artificial Intelligence in Healthcare: A Groundbreaking Study Artificial intelligence (AI) has revolutionized various industries, and healthcare is no exception. One area that requires significant attention is disease prediction, particularly when it comes to cardiovascular disease (CVD). A recent study published in a reputable journal presents a...","categories": ["Generated"],
+        "tags": ["Multimodal","EHR"],
+        "url": "/generated_posts/2025-01-21-llmsbased-fewshot-disease-predictions-using-ehr-a-novel-approach-combining-predictive-agent-reasoning-and-critical-agent-instruction/",
+        "teaser": null
+      },{
         "title": "New Student Resources",
         "excerpt":"This page was created to help you get setup with the resources we have here in our lab. If you have any other information you would like to know, please send me a message and let me know. Server Access Connect to the Server Environment Setup Install Jupyter Lab Server...","categories": ["Setup"],
         "tags": ["Setup","Undergraduates","New Students"],
