@@ -59,6 +59,12 @@ var store = [{
         "url": "/generated_posts/2025-01-22-intellicare-improving-healthcare-analysis-with-variancecontrolled-patientlevel-knowledge-from-large-language-models/",
         "teaser": null
       },{
+        "title": "Multimodal Learning with Transformers A Survey",
+        "excerpt":"Unlocking the Power of Multimodal Learning with Transformers As we continue to navigate the rapidly evolving world of artificial intelligence, one area that holds great promise for innovation and progress is multimodal learning. This research field combines multiple sources of data, such as text, images, and audio, to create a...","categories": ["Generated"],
+        "tags": ["Multimodal","EHR"],
+        "url": "/generated_posts/2025-01-23-multimodal-learning-with-transformers-a-survey/",
+        "teaser": null
+      },{
         "title": "New Student Resources",
         "excerpt":"This page was created to help you get setup with the resources we have here in our lab. If you have any other information you would like to know, please send me a message and let me know. Server Access Connect to the Server Environment Setup Install Jupyter Lab Server...","categories": ["Setup"],
         "tags": ["Setup","Undergraduates","New Students"],
