@@ -65,6 +65,12 @@ var store = [{
         "url": "/generated_posts/2025-01-23-multimodal-learning-with-transformers-a-survey/",
         "teaser": null
       },{
+        "title": "Diff4MMLiTS Advanced Multimodal Liver Tumor Segmentation via DiffusionBased Image Synthesis and Alignment",
+        "excerpt":"Breaking Down Barriers in Liver Tumor Segmentation: Diff4MMLiTS Liver cancer is a serious disease that affects millions of people worldwide each year. Accurate diagnosis and treatment require high-quality medical images, particularly in liver tumor segmentation. However, existing segmentation methods often rely on well-registered multimodal data, which is rare and challenging...","categories": ["Generated"],
+        "tags": ["Multimodal","EHR"],
+        "url": "/generated_posts/2025-01-24-diff4mmlits-advanced-multimodal-liver-tumor-segmentation-via-diffusionbased-image-synthesis-and-alignment/",
+        "teaser": null
+      },{
         "title": "New Student Resources",
         "excerpt":"This page was created to help you get setup with the resources we have here in our lab. If you have any other information you would like to know, please send me a message and let me know. Server Access Connect to the Server Environment Setup Install Jupyter Lab Server...","categories": ["Setup"],
         "tags": ["Setup","Undergraduates","New Students"],
