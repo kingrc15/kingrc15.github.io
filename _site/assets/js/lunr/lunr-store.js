@@ -71,6 +71,12 @@ var store = [{
         "url": "/generated_posts/2025-01-24-diff4mmlits-advanced-multimodal-liver-tumor-segmentation-via-diffusionbased-image-synthesis-and-alignment/",
         "teaser": null
       },{
+        "title": "Noise Estimation Using Density Estimation for SelfSupervised Multimodal Learning",
+        "excerpt":"Unlocking the Power of Multimodal Learning: Improving Self-Supervised Methods As we continue to advance in the field of artificial intelligence, one significant challenge stands in the way of achieving state-of-the-art performance: dealing with noisy and unannotated data. This issue affects various applications, including self-supervised multimodal learning, where machines learn from...","categories": ["Generated"],
+        "tags": ["Multimodal","EHR"],
+        "url": "/generated_posts/2025-01-27-noise-estimation-using-density-estimation-for-selfsupervised-multimodal-learning/",
+        "teaser": null
+      },{
         "title": "New Student Resources",
         "excerpt":"This page was created to help you get setup with the resources we have here in our lab. If you have any other information you would like to know, please send me a message and let me know. Server Access Connect to the Server Environment Setup Install Jupyter Lab Server...","categories": ["Setup"],
         "tags": ["Setup","Undergraduates","New Students"],
