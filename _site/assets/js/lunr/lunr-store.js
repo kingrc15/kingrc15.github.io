@@ -77,6 +77,12 @@ var store = [{
         "url": "/generated_posts/2025-01-27-noise-estimation-using-density-estimation-for-selfsupervised-multimodal-learning/",
         "teaser": null
       },{
+        "title": "Seq2Seq2Sentiment Multimodal Sequence to Sequence Models for Sentiment Analysis",
+        "excerpt":"Unlocking the Power of Multimodal Sentiment Analysis Imagine being able to analyze a person’s emotional state from not just text, but also from video and audio recordings of their speech. This is the challenge faced by researchers in the field of sentiment analysis, a subset of natural language processing that...","categories": ["Generated"],
+        "tags": ["Multimodal","EHR"],
+        "url": "/generated_posts/2025-01-28-seq2seq2sentiment-multimodal-sequence-to-sequence-models-for-sentiment-analysis/",
+        "teaser": null
+      },{
         "title": "New Student Resources",
         "excerpt":"This page was created to help you get setup with the resources we have here in our lab. If you have any other information you would like to know, please send me a message and let me know. Server Access Connect to the Server Environment Setup Install Jupyter Lab Server...","categories": ["Setup"],
         "tags": ["Setup","Undergraduates","New Students"],
