@@ -179,7 +179,7 @@ if __name__ == "__main__":
     last_week_str = last_week.strftime('%Y-%m-%d')
 
     # Construct the arXiv API query URL
-    url = f'http://export.arxiv.org/api/query?search_query=all:multimodal&start=0&max_results=5'
+    url = f'http://export.arxiv.org/api/query?search_query=all:llm&start=0&max_results=5'
 
     # Send the GET request
     response = requests.get(url)
