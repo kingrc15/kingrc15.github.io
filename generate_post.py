@@ -68,7 +68,7 @@ def generate_blog_post(vector_store, title, link):
             max_new_tokens=1024,
             do_sample=True,
             repetition_penalty=1.03,
-            temperature=1.1,
+            temperature=1.4,
             return_full_text=False,
         ),
         model_kwargs={
