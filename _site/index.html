@@ -10,7 +10,7 @@
     <meta charset="utf-8">
 
 <!-- begin _includes/seo.html --><title>Ryan King</title>
-<meta name="description" content="An amazing website about me.">
+<meta name="description" content="Ryan King - Ph.D. student in Computer Science at Texas A&amp;M University, developing multimodal foundation models for healthcare applications.">
 
 
   <meta name="author" content="Ryan King">
@@ -21,10 +21,10 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="Ryan King">
 <meta property="og:title" content="Ryan King">
-<meta property="og:url" content="http://localhost:4000/">
+<meta property="og:url" content="http://0.0.0.0:4000/">
 
 
-  <meta property="og:description" content="An amazing website about me.">
+  <meta property="og:description" content="Ryan King - Ph.D. student in Computer Science at Texas A&amp;M University, developing multimodal foundation models for healthcare applications.">
 
 
 
@@ -41,11 +41,9 @@
   
 
 
-<link rel="canonical" href="http://localhost:4000/">
+<link rel="canonical" href="http://0.0.0.0:4000/">
 
 
-
-  <link rel="next" href="http://localhost:4000/page2/">
 
 
 <script type="application/ld+json">
@@ -54,7 +52,7 @@
     
       "@type": "Person",
       "name": "Ryan King",
-      "url": "http://localhost:4000/"
+      "url": "http://0.0.0.0:4000/"
     
   }
 </script>
@@ -118,7 +116,7 @@
     gtag('config', 'G-B2M8D9XS21');
   </script> -->
 
-  <body class="layout--home">
+  <body class="layout--single">
     <nav class="skip-links">
   <h2 class="screen-reader-text">Skip links</h2>
   <ul>
@@ -144,13 +142,15 @@
           
         </a>
         <ul class="visible-links"><li class="masthead__menu-item">
-              <a href="https://www.linkedin.com/in/ryan-king-659b06179/">CV</a>
+              <a href="/about/">About</a>
             </li><li class="masthead__menu-item">
-              <a href="/year-archive/">Posts</a>
+              <a href="/research/">Research</a>
+            </li><li class="masthead__menu-item">
+              <a href="/cv/">CV</a>
             </li><li class="masthead__menu-item">
               <a href="https://scholar.google.com/citations?user=rg-coNIAAAAJ&hl=en">Publications</a>
             </li><li class="masthead__menu-item">
-              <a href="/major/">Posts by Marvin</a>
+              <a href="/year-archive/">Posts</a>
             </li></ul>
         
         <button class="greedy-nav__toggle hidden" type="button">
@@ -191,7 +191,7 @@
     
     
       <div class="author__bio" itemprop="description">
-        <p>I’m a Ph.D student at Texas A&amp;M, studying machine learning with a focus on its application to healthcare.</p>
+        <p>Ph.D. student in Computer Science at Texas A&amp;M University, developing multimodal foundation models for healthcare applications. Research focuses on contrastive pretraining, transfer learning, and continual learning for EHR data.</p>
 
       </div>
     
@@ -202,7 +202,7 @@
     <ul class="author__urls social-icons">
       
         <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
-          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name">College Station</span>
+          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name">College Station, TX</span>
         </li>
       
 
@@ -232,6 +232,13 @@
 
       
 
+      
+        <li>
+          <a href="mailto:kingrc15@tamu.edu">
+            <meta itemprop="email" content="kingrc15@tamu.edu" />
+            <i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i><span class="label">Email</span>
+          </a>
+        </li>
       
 
       
@@ -294,29 +301,39 @@
 
 
 
-  <div class="archive">
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
     
-      <h1 id="page-title" class="page__title"></h1>
     
-    <a href="https://fineartamerica.com/profiles/sophia-cortez" id="my-link" style="display: none;"></a>
-<a href="https://pixels.com/profiles/sophia-cortez" id="my-link" style="display: none;"></a>
+    
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          
+          
 
 
-<meta itemprop="description" content="About me">
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+        <meta itemprop="description" content="About me" />
 
 <div class="page__inner-wrap">
   <header></header>
   <section class="page__content">
     <p><strong>Welcome to my Webpage</strong></p>
-    <p>I'm a Ph.D student at Texas A&M University researching Machine Learn and its applications to healthcare with <a href="https://people.tamu.edu/~tianbao-yang/">Dr. Tianbao Yang</a> and <a href="https://stmilab.github.io/">Dr. Bobak Mortazavi</a>. I feel incredibly fortunate to have the opportunity to study something that is incredibly interesting to me while also having the potential to positively impact the health and wellbeing of everyone.</p>
+    <p>I am a former Infantry Officer in the United States Army and a current Ph.D. candidate at Texas A&amp;M University, where I research machine learning and its applications to healthcare under the guidance of <a href="https://people.tamu.edu/~tianbao-yang/">Dr. Tianbao Yang</a> and <a href="https://stmilab.github.io/">Dr. Bobak Mortazavi</a>. I am deeply passionate about exploring cutting-edge AI techniques that have the potential to improve health outcomes and enhance patient care. Studying a field that both fascinates me and has real-world impact is an incredible privilege.</p>
 
     <p><strong>Graduate Work</strong></p>
 
-    <p>My current research interest is in methods for creating predictive models for ICUs. Specifically, I'm interested in low-cost methods that integrate multiple modalities of clinical information. Recently, we published a <a href="https://proceedings.mlr.press/v225/king23a.html">paper</a> on multimodal contrastive pretraining for ICUs that utilized information already being recorded in EHR databases to learn meaningful features. We showed that these models learn information necessary to make predictions about the outcome of patients with no labeled data through the use of a zero-shot classifier. I currently work on methods for transporting these models from one ICU to the next.</p>
+    <p>My research focuses on developing multimodal medical Large Language Models (LLMs) that can simultaneously process clinical text, structured EHR data, and medical imaging to enable intelligent clinical reasoning and decision support. I have pioneered foundation model architectures that unify multiple healthcare data modalities through innovative bi-modal pretraining approaches, demonstrating superior zero-shot performance on downstream clinical tasks without requiring labeled data – as detailed in our recent paper on multimodal contrastive pretraining for medical time series and notes (<a href="https://arxiv.org/abs/2312.06855">paper</a>). My work encompasses developing comprehensive EHR benchmarks (<a href="https://openreview.net/forum?id=QWhce2zqne#discussion">paper</a>) to evaluate medical LLM transferability across diverse healthcare settings, and I am currently exploring advanced lifelong learning strategies and unified training objectives to seamlessly integrate clinical notes, lab values, vital signs, and imaging data. Additional recent publications include work on memory-efficient continual learning with CLIP models presented at the NeurIPS 2024 Workshop (<a href="https://openreview.net/forum?id=lLpTmQnapG&amp;referrer=%5Bthe%20profile%20of%20Tianbao%20Yang%5D(%2Fprofile%3Fid%3D~Tianbao_Yang1)">paper</a>), an efficient contrastive unimodal pretraining method for EHR time series data accepted at the 2024 IEEE EMBS International Conference on Biomedical and Health Informatics (<a href="https://arxiv.org/abs/2410.09199">paper</a>), and a domain incremental continual learning benchmark for ICU time series model transportability (<a href="https://openreview.net/forum?id=QWhce2zqne#discussion">paper</a>).</p>
 
-    <p>In addition to my research, I've also been very fortunate to have had the opportunity to teach CSCE421: Machine Learning at Texas A&M University as a Graduate Lecturer. Not only was this a great opportunity to help others, but it was incredibly rewarding to nurture the creativity of each student.</p>
+     <p>In addition to my research, I have had the honor of serving as the Instructor of Record for CSCE421: Machine Learning at Texas A&amp;M University, where I developed a comprehensive curriculum for over 100 undergraduate students. This teaching experience has been incredibly rewarding, as it allowed me to share my passion for machine learning while nurturing the creativity and technical skills of the next generation of innovators.</p> 
 
-    <p>I've also authored torchmimic, which is an open-source library with PyTorch-like tools for conducting experiments on the MIMIC-III Benchmark. It is my hope that this library can make machine learning for healthcare research more accessible to more people.</p>
+     <p>I am also the creator and maintainer of <a href="https://github.com/kingrc15/torchmimic"><strong>torchmimic</strong></a>, an open-source Python library designed to facilitate machine learning experiments on EHR data. Through torchmimic, and my contributions to related projects like <a href="https://github.com/mmcdermott/MEDS_transforms/tree/main"><strong>meds-transforms</strong></a> and <a href="https://github.com/Oufattole/meds-torch"><strong>meds-torch</strong></a>, I strive to make advanced healthcare research more accessible and reproducible, empowering a broader community to drive innovation in this vital field.</p>
 
 
 
@@ -328,15 +345,35 @@
 
     <p><strong>Before Computer Science</strong></p>
 
-    <p>Before my obsession with Machine Learning, I attended Virginia Military Institute (VMI) and received a B.S. in Civil Engineering. During my time at VMI, I was able to become a certified EMT where I had the opportunity to learn about the medical world and help my community. In May of 2015 I graduated from VMI and received my commission as an Active Duty Army Infantry Officer. During my time in the Army, I was stationed at Fort Bliss with the 1st Armored Division. We deployed to Kuwait, Iraq and Syria in support of multiple overseas operations. In July of 2019, I got out of the Army and started my Undergraduate Degree in Computer Science at Texas A&M University.</p>
+    <p>Before my obsession with Machine Learning, I attended Virginia Military Institute (VMI) and received a B.S. in Civil Engineering. During my time at VMI, I was able to become a certified EMT where I had the opportunity to learn about the medical world and help my community. In May of 2015 I graduated from VMI and received my commission as an Active Duty Army Infantry Officer. During my time in the Army, I was stationed at Fort Bliss with the 1st Armored Division. We deployed to Kuwait, Iraq and Syria in support of multiple overseas operations. In July of 2019, I got out of the Army and started my Undergraduate Degree in Computer Science at Texas A&amp;M University.</p>
   </section>
 </div>
 
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
 
 
+        
 
-  </div>
+
+      </footer>
+
+      
+
+      
+    </div>
+
+    
+  </article>
+
+  
+  
 </div>
+
     </div>
 
     

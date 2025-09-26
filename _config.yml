@@ -20,10 +20,10 @@ title                    : "Ryan King"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Ryan King"
-description              : "An amazing website about me."
-url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+description              : "Ryan King - Ph.D. student in Computer Science at Texas A&M University, developing multimodal foundation models for healthcare applications."
+url                      : "https://kingrc15.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+repository               : "kingrc15/kingrc15.github.io"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
@@ -96,9 +96,9 @@ analytics:
 author:
   name             : "Ryan King"
   avatar           : "/assets/images/ryan-king.jpg"
-  bio              : "I’m a Ph.D student at Texas A&M, studying machine learning with a focus on its application to healthcare."
-  location         : "College Station"
-  email            :
+  bio              : "Ph.D. student in Computer Science at Texas A&M University, developing multimodal foundation models for healthcare applications. Research focuses on contrastive pretraining, transfer learning, and continual learning for EHR data."
+  location         : "College Station, TX"
+  email            : "kingrc15@tamu.edu"
   links:
     - label: "Website"
       icon: "fas fa-fw fa-link"
@@ -224,6 +224,7 @@ plugins:
   - jekyll-feed
   - jekyll-include-cache
   - jekyll-seo-tag
+  - jekyll-remote-theme
 
 # mimic GitHub Pages with --safe
 whitelist:

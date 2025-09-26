@@ -1,10 +1,12 @@
 # main links
 main:
+  - title: "About"
+    url: /about/
+  - title: "Research"
+    url: /research/
   - title: "CV"
-    url: https://www.linkedin.com/in/ryan-king-659b06179/
-  - title: "Posts"
-    url: /year-archive/
+    url: /cv/
   - title: "Publications"
     url: https://scholar.google.com/citations?user=rg-coNIAAAAJ&hl=en
-  - title: "Posts by Marvin"
-    url: /major/
+  - title: "Posts"
+    url: /year-archive/

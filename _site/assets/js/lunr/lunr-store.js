@@ -83,6 +83,30 @@ var store = [{
         "url": "/generated_posts/2025-01-28-seq2seq2sentiment-multimodal-sequence-to-sequence-models-for-sentiment-analysis/",
         "teaser": null
       },{
+        "title": "Large Language Models as Software Components A Taxonomy for LLMIntegrated Applications",
+        "excerpt":"Unlocking the Power of Large Language Models: A New Framework for Software Engineering In recent years, Large Language Models (LLMs) have revolutionized various fields, from medicine and law to marketing and education. However, despite their widespread adoption, the integration of LLMs into software applications has been relatively unexplored. Research has...","categories": ["Generated"],
+        "tags": ["Multimodal","EHR"],
+        "url": "/generated_posts/2025-01-29-large-language-models-as-software-components-a-taxonomy-for-llmintegrated-applications/",
+        "teaser": null
+      },{
+        "title": "Parrot Efficient Serving of LLMbased Applications with Semantic Variable",
+        "excerpt":"Simplifying the Power of Large Language Models: Enhancing LLM-based Applications Imagine a scenario where large language models (LLMs) can efficiently serve various applications, freeing up resources and reducing the time required to process and analyze vast amounts of text data. This goal is precisely what researchers from the paper “Parrot...","categories": ["Generated"],
+        "tags": ["Multimodal","EHR"],
+        "url": "/generated_posts/2025-01-30-parrot-efficient-serving-of-llmbased-applications-with-semantic-variable/",
+        "teaser": null
+      },{
+        "title": "LLM Online Spatialtemporal Signal Reconstruction Under Noise",
+        "excerpt":"Unlocking the Power of Spatial-Temporal Signal Reconstruction with LLM Online In today’s rapidly evolving digital world, advanced technologies like artificial intelligence and machine learning are increasingly being used to improve our daily lives. Recent research in the field of graph signal processing has pushed the boundaries of spatiotemporal signal reconstruction,...","categories": ["Generated"],
+        "tags": ["Multimodal","EHR"],
+        "url": "/generated_posts/2025-01-31-llm-online-spatialtemporal-signal-reconstruction-under-noise/",
+        "teaser": null
+      },{
+        "title": "A Survey of Large Language Models for Code Evolution Benchmarking and Future Trends",
+        "excerpt":"Unlocking the Power of Large Language Models: A Survey on Code Evolution In the ever-evolving world of software engineering, artificial intelligence has emerged as a game-changer. Recent advancements in large language models (LLMs) have brought us to the cusp of a technological revolution. However, a pressing question remains: how can...","categories": ["Generated"],
+        "tags": ["Multimodal","EHR"],
+        "url": "/generated_posts/2025-02-06-a-survey-of-large-language-models-for-code-evolution-benchmarking-and-future-trends/",
+        "teaser": null
+      },{
         "title": "New Student Resources",
         "excerpt":"This page was created to help you get setup with the resources we have here in our lab. If you have any other information you would like to know, please send me a message and let me know. Server Access Connect to the Server Environment Setup Install Jupyter Lab Server...","categories": ["Setup"],
         "tags": ["Setup","Undergraduates","New Students"],
