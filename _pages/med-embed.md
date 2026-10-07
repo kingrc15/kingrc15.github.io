@@ -135,7 +135,7 @@ layout: bare
   async function decryptHtml(passphrase, payload) {
     const salt = b64ToBytes(payload.salt);
     const nonce = b64ToBytes(payload.nonce);
-    const ct = b64ToBytes(payload.ct);
+    const ct = b64ToBytes(payload.ct || payload.ciphertext);
     const key = await deriveKey(passphrase, salt, payload.iter || 200000);
     const plain = await crypto.subtle.decrypt({ name: "AES-GCM", iv: nonce }, key, ct);
     return new TextDecoder().decode(plain);
