@@ -20,7 +20,7 @@ title                    : "Ryan King"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Ryan King"
-description              : "Ryan King - Ph.D. student in Computer Science at Texas A&M University, developing multimodal foundation models for healthcare applications."
+description              : "Ryan King, Ph.D. - Research Data Scientist at Houston Methodist, developing multimodal clinical AI and dynamic cardiovascular risk models."
 url                      : "https://kingrc15.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "kingrc15/kingrc15.github.io"
@@ -96,9 +96,9 @@ analytics:
 author:
   name             : "Ryan King"
   avatar           : "/assets/images/ryan-king.jpg"
-  bio              : "Ph.D. student in Computer Science at Texas A&M University, developing multimodal foundation models for healthcare applications. Research focuses on contrastive pretraining, transfer learning, and continual learning for EHR data."
-  location         : "College Station, TX"
-  email            : "kingrc15@tamu.edu"
+  bio              : "Research Data Scientist at Houston Methodist’s Digital Health Institute. Multimodal clinical AI, dynamic cardiovascular risk prediction, and transportable machine learning."
+  location         : "Houston, TX"
+  email            :
   links:
     - label: "Website"
       icon: "fas fa-fw fa-link"
@@ -118,9 +118,6 @@ author:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:kingrc15@tamu.edu"
 
 # Site Footer
 footer:

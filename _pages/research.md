@@ -1,113 +1,20 @@
 ---
-title: "Research"
+title: Research
 permalink: /research/
-author_profile: true
-layout: single
+layout: portfolio
+nav: research
+description: Ryan King's research in dynamic cardiovascular risk prediction, multimodal foundation models, clinical LLM evaluation, and transportable healthcare AI.
 ---
 
-My research focuses on developing multimodal foundation models for healthcare applications, with particular emphasis on contrastive pretraining, transfer learning, and continual learning for Electronic Health Records (EHR) data.
+<section class="page-intro wrap"><p class="eyebrow">Research / From representations to clinical questions</p><h1>Learning from the<br><em>full clinical picture.</em></h1><p class="page-lead">I develop machine learning methods that connect longitudinal measurements, clinical language, and medical signals, with an emphasis on cardiovascular health and evaluation across clinical settings.</p><div class="actions"><a class="button" href="#publications">Publications <span aria-hidden="true">↓</span></a><a class="text-link" href="https://scholar.google.com/citations?user=rg-coNIAAAAJ&amp;hl=en">Google Scholar <span aria-hidden="true">↗</span></a></div></section>
 
-## Research Highlights
+<section class="wrap research-details" aria-label="Current research directions">
+  <article class="research-detail" id="cardiovascular"><div class="detail-heading"><span class="row-index" aria-hidden="true">01</span><p class="eyebrow">Research in progress</p><h2>Dynamic cardiovascular<br>risk prediction.</h2><div class="topic-tags"><span>Longitudinal EHR</span><span>Survival analysis</span><span>PREVENT</span></div></div><div class="prose"><h3>Health changes. Risk models should account for it.</h3><p>A single clinical assessment captures only part of a patient’s history. I study how repeated measurements and evolving risk factors can support prediction of cardiovascular disease, atherosclerotic cardiovascular disease, and heart failure.</p><p>My work brings longitudinal representation learning and survival modeling together with established clinical risk factors. Key questions include the value of a patient’s history, the stability of serial risk estimates, and performance when models are evaluated in an external population.</p><p class="research-question">Clinical question <span>What does a patient’s trajectory tell us beyond the latest visit?</span></p></div></article>
+  <article class="research-detail" id="multimodal"><div class="detail-heading"><span class="row-index" aria-hidden="true">02</span><p class="eyebrow">Research in progress</p><h2>Multimodal clinical<br>foundation models.</h2><div class="topic-tags"><span>ECG &amp; reports</span><span>Clinical text</span><span>Medical imaging</span></div></div><div class="prose"><h3>Different modalities carry different pieces of the story.</h3><p>I study how clinical signals, images, and language can supervise one another. Current directions include ECG–report representation learning, combining language alignment with signal self-supervision, and vision–language models for chest radiography.</p><p>This work builds on my earlier research aligning EHR time series and clinical notes with contrastive learning and masked prediction. The goal is to learn representations that remain useful when labels are limited or downstream tasks change.</p><p class="research-question">Methodological question <span>How can complementary clinical data teach a model more than either source alone?</span></p></div></article>
+  <article class="research-detail" id="translation"><div class="detail-heading"><span class="row-index" aria-hidden="true">03</span><p class="eyebrow">Research in progress</p><h2>Clinical language models<br>and clinician alignment.</h2><div class="topic-tags"><span>Heart failure</span><span>Clinical reasoning</span><span>LLM evaluation</span></div></div><div class="prose"><h3>Evaluate the clinical interpretation, too.</h3><p>I investigate how language models interpret discharge summaries and describe the reasons for heart failure readmission. This includes comparing model outputs with clinician review and examining agreement on diagnoses, symptoms, and contributing factors.</p><p>Related work explores clinically grounded supervision and reinforcement learning for medical language and vision–language models. I’m interested in evaluation that captures the usefulness and faithfulness of a clinical interpretation alongside predictive performance.</p><p class="research-question">Evaluation question <span>When a model offers an explanation, how well does it align with clinical review?</span></p></div></article>
+  <article class="research-detail" id="transportability"><div class="detail-heading"><span class="row-index" aria-hidden="true">04</span><p class="eyebrow">An ongoing theme</p><h2>Transportability<br>and reproducibility.</h2><div class="topic-tags"><span>External validation</span><span>Continual learning</span><span>Open source</span></div></div><div class="prose"><h3>Performance in one dataset is only part of the evidence.</h3><p>My research examines how models adapt across institutions and patient populations, including domain incremental learning for ICU time series and multi-label contrastive fine-tuning for EHR model transportability.</p><p>I also contribute to the MEDS ecosystem and develop open-source tools for clinical ML. Shared data standards, reusable preprocessing, and consistent benchmarks make it easier to compare methods and understand where they work.</p><a class="text-link" href="{{ '/#software' | relative_url }}">Explore software contributions <span aria-hidden="true">↗</span></a></div></article>
+</section>
 
-### Multimodal Pretraining for Healthcare
-- **Developed the first bi-modal pretraining method** for EHR time-series data and clinical notes, utilizing contrastive pretraining and masked reconstruction
-- **Created zero-shot evaluation frameworks** demonstrating that pretrained models outperform fully fine-tuned models without labeled data
-- **Currently developing unified training objectives** for multi-modal contrastive pretraining across different data modalities
+<section class="section section-tinted" id="publications" aria-labelledby="all-publications-title"><div class="wrap"><div class="section-heading"><div><p class="eyebrow">Publications</p><h2 id="all-publications-title">Selected published work.</h2></div><a class="text-link" href="https://scholar.google.com/citations?user=rg-coNIAAAAJ&amp;hl=en">Full list on Google Scholar <span aria-hidden="true">↗</span></a></div><div class="publication-filters" role="group" aria-label="Filter publications by topic" hidden><button type="button" data-publication-filter="all" aria-pressed="true">All work</button><button type="button" data-publication-filter="multimodal" aria-pressed="false">Multimodal learning</button><button type="button" data-publication-filter="transportability" aria-pressed="false">Transportability</button><button type="button" data-publication-filter="benchmarks" aria-pressed="false">Benchmarks</button><span class="filter-count" data-publication-count aria-live="polite">6 publications</span></div>{% include portfolio-publications.html %}<p class="small-note">Years indicate the original conference or workshop. Some linked arXiv versions were posted later.</p></div></section>
 
-### Transfer Learning and Model Transportability
-- **Developed EHR benchmarks** to evaluate model transferability from large academic hospitals to various regions across the U.S.
-- **Working on lifelong learning approaches** for transferring pretrained models to institutions with different demographics
-- **Created domain incremental continual learning benchmarks** for ICU time series model transportability
-
-### Foundation Models for Healthcare
-- **Memory-efficient continual learning** with CLIP models for healthcare applications
-- **Privacy-preserving continual learning** for EHRs using bimodal contrastive pretraining
-- **Guideline-aware, language-conditioned time-series models** for lab abnormality prediction
-
-## Publications
-
-### 2024
-**Memory-Efficient Continual Learning with CLIP Models**  
-*Ryan King*, Gang Li, Bobak J. Mortazavi, Tianbao Yang  
-NeurIPS 2024 Workshop on Adaptive Foundation Models
-
-**An Efficient Contrastive Unimodal Pretraining Method for EHR Time Series Data**  
-*Ryan King*, Shivesh Kodali, Conrad Kreuger, Tianbao Yang, Bobak Mortazavi  
-2024 IEEE EMBS International Conference on Biomedical and Health Informatics (BHI)  
-*Acceptance Rate: 25.6%*
-
-**A Domain Incremental Continual Learning Benchmark for ICU Time Series Model Transportability**  
-*Ryan King*, Conrad Kreuger, Ethan Vesekla, Tianbao Yang, Bobak Mortazavi  
-2024 IEEE EMBS International Conference on Biomedical and Health Informatics (BHI)  
-*Acceptance Rate: 25.6%*
-
-### 2023
-**Multimodal Pretraining of Medical Time Series and Notes**  
-*Ryan King*, Tianbao Yang, Bobak Mortazavi  
-Proceedings of the 3rd Machine Learning for Health Symposium (ML4H), PMLR 225:244-255  
-*Acceptance Rate: 28.7%*
-
-### Collaborative Work
-**MEDS Decentralized, Extensible Validation (MEDS-DEV) Benchmark: Establishing Reproducibility and Comparability in ML for Health**  
-Matthew B.A. McDermott, Aleksia Kolo, Chao Pang, Edward Choi, Ethan Steinberg, Hyewon Jeong, Jack Gallifant, Jason Alan Fries, Jeffrey N Chiang, Jungwoo Oh, Justin Xu, Kamilė Stankevičiūtė, Kiril Vadimovic Klein, Mikkel Fruelund Odgaard, Nassim Oufattole, Patrick Rockenschaub, Pawel Renc, Robin van de Water, Shalmali Joshi, Simon Austin Lee, Teya Bergamaschi, Tom Pollard, Vincent Jeanselme, Nigam Shah, Michael Wornow, Aparajita Kashyap, Xinzhou Jiang, Yanwei Li, Young Sang Choi, Yuta Kobayashi, *Ryan King*  
-Proceedings of the 4th Machine Learning for Health Symposium (ML4H)
-
-### Under Review
-**Guideline-Aware, Language-Conditioned Time-Series Model for Lab Abnormality Prediction in EHRs**  
-*Ryan King*, Julian Samuel, Sadeer Al-Kindi, Bobak Mortazavi  
-Proceedings of the 5th Machine Learning for Health Symposium (ML4H)
-
-**Privacy Preserving Continual Learning for EHRs using Bimodal Contrastive Pretraining**  
-Barry Liu, *Ryan King*, Tianbao Yang, Bobak Mortazavi  
-Proceedings of the 5th Machine Learning for Health Symposium (ML4H)
-
-## Research Projects
-
-### Current Projects
-1. **Bi-modal Pretraining for EHR Data**: Developing methods to unify EHR time-series data and clinical notes using contrastive pretraining and masked reconstruction
-2. **Transfer Learning Benchmarks**: Creating comprehensive benchmarks for evaluating model transferability across healthcare institutions
-3. **Continual Learning for Healthcare**: Developing lifelong learning approaches for evolving healthcare data and changing demographics
-4. **Multi-modal Foundation Models**: Creating unified training objectives for contrastive pretraining across multiple healthcare data modalities
-
-### Past Projects
-1. **Domain Adaptation for scRNA-seq**: Developed Maximum Mean Discrepancy minimization techniques for batch correction in single-cell RNA sequencing data
-2. **Deep Generative Models**: Ported TensorFlow Zero-Inflated Negative Binomial Autoencoders to PyTorch for improved usability and training stability
-
-## Research Environment
-
-I work in the **Clinical AI Lab** at Texas A&M University under the supervision of Dr. Bobak Mortazavi and Dr. Tianbao Yang. Our lab maintains two high-performance compute servers and has developed comprehensive onboarding infrastructure for new researchers.
-
-### Lab Infrastructure
-- **High-performance compute servers** for large-scale model training
-- **Comprehensive setup guides** for new student onboarding
-- **Open-source tools** for reproducible research across institutions
-
-## Open Source Contributions
-
-### Healthcare ML Tools
-- **[torchmimic](https://torchmimic.readthedocs.io/en/latest/)**: PyTorch-based EHR toolkit for reproducible research
-- **[meds-transforms](https://github.com/Oufattole/meds-torch/tree/main)**: Clinical data preprocessing utilities
-- **[meds-transforms](https://github.com/mmcdermott/MEDS_transforms)**: Additional preprocessing tools for clinical data
-
-### Documentation & Guides
-- **[New Student Setup Guide](https://kingrc15.github.io/setup/new-student-setup/)**: Comprehensive onboarding documentation for new lab members
-- **Kaggle Tutorials**: Clinical competition development tutorials
-
-## Research Philosophy
-
-My research is driven by the belief that foundation models can revolutionize healthcare by enabling:
-- **Generalizable AI systems** that work across different institutions and patient populations
-- **Privacy-preserving methods** that protect patient data while enabling collaborative research
-- **Continual learning systems** that adapt to evolving healthcare practices and demographics
-- **Multimodal approaches** that leverage the full spectrum of healthcare data
-
-## Collaboration
-
-I'm always interested in collaborating with researchers working on:
-- Healthcare AI and machine learning
-- Multimodal learning and foundation models
-- Transfer learning and domain adaptation
-- Continual learning and lifelong learning
-- Clinical data analysis and EHR systems
-
-Feel free to reach out if you're interested in collaborating or have questions about my research!
+{% include portfolio-contact.html %}

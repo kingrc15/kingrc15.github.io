@@ -1,0 +1,59 @@
+- title: "ML-FLYP: Improving EHR Model Transportability with Multi-Label Contrastive Fine-Tuning"
+  authors: "Tzu Hung Liu, Ryan King, Bobak Mortazavi"
+  venue: "IEEE EMBC"
+  year: 2026
+  url: "https://cmsworkshops.com/EMBC2026/view_paper.php?PaperNum=3545&SessionID=1102&bare=1"
+  link_label: "Conference"
+  summary: "Multi-label contrastive fine-tuning for transferring EHR models across healthcare settings."
+  topics: [transportability, multimodal]
+  selected: true
+
+- title: "An Efficient Contrastive Unimodal Pretraining Method for EHR Time Series Data"
+  authors: "Ryan King, Shivesh Kodali, Conrad Krueger, Tianbao Yang, Bobak J. Mortazavi"
+  venue: "IEEE BHI"
+  year: 2024
+  url: "https://arxiv.org/abs/2410.09199"
+  link_label: "Paper"
+  summary: "Efficient self-supervised representation learning for long clinical time series, with external evaluation on eICU."
+  topics: [representations, transportability]
+  selected: true
+
+- title: "A Domain Incremental Continual Learning Benchmark for ICU Time Series Model Transportability"
+  authors: "Ryan King, Conrad Krueger, Ethan Veselka, Tianbao Yang, Bobak J. Mortazavi"
+  venue: "IEEE BHI"
+  year: 2024
+  url: "https://arxiv.org/abs/2605.03832"
+  link_label: "Paper"
+  summary: "A benchmark for adapting clinical models across geographic domains while retaining what they have already learned."
+  topics: [transportability, benchmarks]
+  selected: false
+
+- title: "Memory-Efficient Continual Learning with CLIP Models"
+  authors: "Ryan King, Gang Li, Bobak J. Mortazavi, Tianbao Yang"
+  venue: "NeurIPS AFM Workshop"
+  year: 2024
+  url: "https://arxiv.org/abs/2605.03866"
+  link_label: "Paper"
+  summary: "Distributionally robust continual learning for adapting image–text representations with limited replay memory."
+  topics: [representations, multimodal]
+  selected: false
+
+- title: "MEDS Decentralized, Extensible Validation (MEDS-DEV) Benchmark: Establishing Reproducibility and Comparability in ML for Health"
+  authors: "MEDS-DEV working groups · Ryan King, contributing author"
+  venue: "ML4H Demo Track"
+  year: 2024
+  url: "https://openreview.net/forum?id=DExp3tRRel"
+  link_label: "Paper"
+  summary: "A community effort to make clinical ML evaluation reproducible and comparable across datasets."
+  topics: [benchmarks]
+  selected: true
+
+- title: "Multimodal Pretraining of Medical Time Series and Notes"
+  authors: "Ryan King, Tianbao Yang, Bobak J. Mortazavi"
+  venue: "ML4H · PMLR 225"
+  year: 2023
+  url: "https://proceedings.mlr.press/v225/king23a.html"
+  link_label: "Paper"
+  summary: "Aligning clinical measurements and notes through contrastive and masked prediction objectives for learning with limited labels."
+  topics: [multimodal, representations]
+  selected: true

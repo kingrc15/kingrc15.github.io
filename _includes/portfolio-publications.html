@@ -1,0 +1,11 @@
+<ul class="publication-list">
+  {% for paper in site.data.publications %}
+  {% if include.selected != true or paper.selected %}
+  <li class="publication-item" data-topics="{{ paper.topics | join: ' ' }}">
+    <div class="publication-meta"><span>{{ paper.venue }}</span><span>{{ paper.year }}</span></div>
+    <div class="publication-body"><h3><a href="{{ paper.url | escape }}">{{ paper.title }}</a></h3><p class="publication-authors">{{ paper.authors | replace: 'Ryan King', '<strong>Ryan King</strong>' }}</p><p class="publication-summary">{{ paper.summary }}</p></div>
+    <a class="paper-link" href="{{ paper.url | escape }}" aria-label="{{ paper.link_label }}: {{ paper.title | escape }}">{{ paper.link_label }} <span aria-hidden="true">↗</span></a>
+  </li>
+  {% endif %}
+  {% endfor %}
+</ul>

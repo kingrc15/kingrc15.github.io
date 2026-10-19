@@ -1,78 +1,17 @@
 ---
-title: "About"
+title: About
 permalink: /about/
-author_profile: true
-layout: single
+layout: portfolio
+nav: about
+description: Ryan King is a Research Data Scientist at Houston Methodist, a Texas A&M computer science Ph.D., and a former U.S. Army Infantry Officer.
 ---
 
-I'm Ryan King, a Ph.D. candidate in Computer Science at Texas A&M University, developing multimodal foundation models for healthcare applications. My research focuses on contrastive pretraining, transfer learning, and continual learning for Electronic Health Records (EHR) data.
+<section class="page-intro wrap"><p class="eyebrow">About / Ryan King, Ph.D.</p><h1>Machine learning.<br>Medicine. <em>Meaningful work.</em></h1><p class="page-lead">I’m a Research Data Scientist at Houston Methodist’s Digital Health Institute, working on clinical AI with Sadeer Al-Kindi and Khurram Nasir.</p></section>
 
-## Education
+<section class="wrap section about-grid" aria-labelledby="about-title"><div class="about-portrait"><img src="{{ '/assets/images/ryan-king.jpg' | relative_url }}" alt="Ryan King" width="1151" height="1151"><p class="label">Based in Houston, Texas</p></div><div class="prose"><h2 id="about-title">A practical question at the center.</h2><p>How can we use the information collected during routine care to better understand what happens next for a patient? That question connects my work in longitudinal health records, clinical language, physiological signals, and medical imaging.</p><p>My current research focuses on dynamic cardiovascular risk prediction, multimodal foundation models, and evaluating whether clinical AI generalizes across populations and agrees with clinical expertise. I’m especially interested in the steps between a promising retrospective result and a model that could be useful in practice.</p><p>I earned my Ph.D. in Computer Science at Texas A&amp;M University, advised by Bobak Mortazavi and Tianbao Yang. My dissertation, <em>Integrating Multimodal EHR Data into Deep Learning Models for Clinical Outcome Prediction</em>, brought together my interests in representation learning and clinical prediction. I defended in December 2025 and graduated in 2026.</p><p>Before computer science, I studied Civil Engineering at Virginia Military Institute and served as an Infantry Officer in the U.S. Army’s 1st Armored Division from 2015 to 2019. I returned to school at Texas A&amp;M to study computer science and found a research direction at the intersection of machine learning and health.</p><a class="text-link" href="{{ '/cv/' | relative_url }}">View my CV <span aria-hidden="true">↗</span></a></div></section>
 
-**Ph.D. in Computer Science** - Texas A&M University (Expected 2026)  
-*Advisors: Dr. Bobak Mortazavi and Dr. Tianbao Yang*  
-Engineering Graduate Merit Fellowship
+<section class="section section-tinted"><div class="wrap two-column"><div><p class="eyebrow">Education &amp; experience</p><h2>A few milestones.</h2></div><dl class="milestone-list"><div><dt>2026–present</dt><dd><strong>Research Data Scientist</strong><span>Houston Methodist · Digital Health Institute</span></dd></div><div><dt>2021–2026</dt><dd><strong>Ph.D., Computer Science</strong><span>Texas A&amp;M University · Advisors: Bobak Mortazavi and Tianbao Yang</span></dd></div><div><dt>2019–2021</dt><dd><strong>B.S., Computer Science</strong><span>Texas A&amp;M University · Summa Cum Laude, Research Honors</span></dd></div><div><dt>2015–2019</dt><dd><strong>Infantry Officer</strong><span>United States Army · 1st Armored Division</span></dd></div><div><dt>2011–2015</dt><dd><strong>B.S., Civil Engineering</strong><span>Virginia Military Institute · Minor in Applied Mathematics</span></dd></div></dl></div></section>
 
-**B.S. in Computer Science** - Texas A&M University (2019-2021)  
-Summa Cum Laude, Research Honors
+<section class="section wrap two-column"><div><p class="eyebrow">Teaching &amp; community</p><h2>Science is a<br>shared effort.</h2></div><div class="prose"><h3>Teaching and mentorship</h3><p>I served as Instructor of Record for CSCE 421: Machine Learning at Texas A&amp;M, teaching approximately 100 undergraduate students. I developed lectures, assignments, projects, and exams spanning classical machine learning and deep learning.</p><h3>Service</h3><p>I served as Young Professionals Chair for IEEE EMBS BHI 2025. My reviewing service includes NeurIPS, ICML, ICLR, ML4H, IEEE BHI, IEEE JBHI, and Neurocomputing.</p><h3>Selected recognition</h3><ul class="clean-list"><li>IEEE EMBS BHI Service Award, 2025</li><li>NSF–EMBS–Google NextGen Scholar, 2025</li><li>Texas A&amp;M university nominee for the Google PhD Fellowship, 2025</li><li>IEEE EMBS BHI Best Reviewer Award, 2024</li><li>Engineering Graduate Merit Fellowship, Texas A&amp;M University</li></ul></div></section>
 
-**B.S. in Civil Engineering** - Virginia Military Institute (2011-2015)  
-Minor in Applied Mathematics
-
-## Professional Experience
-
-### Graduate Research Assistant, Clinical AI Lab
-**Texas A&M University** | Aug 2021 – Present
-
-- **Pioneered multimodal medical LLM research** developing foundation models that unify clinical text, structured EHR data, and medical imaging. Designed novel architectures for bi-modal pretraining that enable zero-shot clinical reasoning and cross-modal knowledge transfer.
-- **Led breakthrough work** in medical LLM pretraining, creating models that can simultaneously process clinical notes, lab values, vital signs, and imaging data. Resulted in multiple first-author publications demonstrating superior performance on downstream clinical tasks.
-- **Directed a multidisciplinary team** of graduate and undergraduate researchers on cutting-edge projects involving medical LLM fine-tuning, multimodal clinical reasoning, and incorporation of clinical interventions for causal inference in pretraining.
-- **Designed lab onboarding infrastructure** and maintain two high-performance compute servers; created and published a [new student setup guide](https://kingrc15.github.io/setup/new-student-setup/) that improved onboarding efficiency and research productivity.
-- **Co-authored two federal research proposals** (NSF Smart & Connected Health and NIH NLM R01), contributing sections on multimodal medical LLM pretraining, clinical data infrastructure, and evaluation methodology for healthcare AI systems.
-
-### Undergraduate Research Assistant, Bioinformatics Lab
-**Texas A&M University** | Dec 2019 – May 2021
-
-- **Developed and evaluated a domain adaptation technique** that reduced batch effects via Maximum Mean Discrepancy minimization
-- **Ported deep generative models** by translating a TensorFlow Zero-Inflated Negative Binomial Autoencoder (ZINB-AE) into PyTorch
-
-### Infantry Officer, United States Army (Active Duty)
-**1st Armored Division, Fort Bliss** | May 2015 – July 2019
-
-- **Led operations and logistics** for a 120-soldier infantry company, deploying $80M in equipment across Syria, Iraq, and Kuwait
-- **Engineered a custom logistics tracking system** integrated with the Army SAP platform, facilitating recovery of $300M in inventory
-- **Planned and executed adaptive supply chains** supporting 4 platoons under dynamic mission objectives
-
-## Teaching Experience
-
-**Instructor of Record, CSCE 421: Machine Learning** - Texas A&M University  
-- Selected to teach a class of 100 undergraduate students
-- Designed comprehensive curriculum covering Logistic Regression, SVMs, Decision Trees, CNNs, RNNs, and Auto-Encoders
-- Developed lectures, quizzes, homework assignments, projects, and exams
-
-## Service & Leadership
-
-- **Young Professionals (YP) Chair** for IEEE-EMBS BHI 2025
-- **Organized COVID-19 Data Competition** for four consecutive years
-- **Mentored 25+ junior researchers**, including undergraduates and master's students
-- **Reviewer** for NeurIPS, ICML, ICLR, ML4H, BHI, JBHI, and Neurocomputing
-
-## Open Source Contributions
-
-- [torchmimic](https://torchmimic.readthedocs.io/en/latest/) - PyTorch-based EHR toolkit
-- [meds-transforms](https://github.com/Oufattole/meds-torch/tree/main) - Clinical data preprocessing tools
-- [meds-transforms](https://github.com/mmcdermott/MEDS_transforms) - Additional preprocessing utilities
-
-## Honors & Awards
-
-- **Engineering Graduate Merit Fellowship** - Texas A&M University
-- **University Nomination for Google PhD Fellowship** - 2025 Google PhD Fellowship in Health Research
-- **Best Reviewer Award** - 2024 IEEE EMBS International Conference on Biomedical and Health Informatics
-- **Undergraduate Research Honors** - Texas A&M University
-- **Travel Awards** - Multiple conference travel awards
-
-## Skills
-
-**Programming Languages:** Python, SQL, C, C++, Java, JavaScript, C#, VBA, Scheme
-
-**Packages & Frameworks:** PyTorch, TensorFlow, PySpark, Lightning, Hydra, Numpy, Pandas, Matplotlib, Sklearn
+{% include portfolio-contact.html %}

@@ -1,5 +1,7 @@
 # main links
 main:
+  - title: "Home"
+    url: /
   - title: "About"
     url: /about/
   - title: "Research"
@@ -8,5 +10,5 @@ main:
     url: /cv/
   - title: "Publications"
     url: https://scholar.google.com/citations?user=rg-coNIAAAAJ&hl=en
-  - title: "Posts"
+  - title: "Notes"
     url: /year-archive/
