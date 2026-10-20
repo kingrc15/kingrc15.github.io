@@ -1,9 +1,10 @@
 ---
 title: Research
+seo_title: "Multimodal Clinical AI & Cardiovascular Risk Research | Ryan King"
 permalink: /research/
 layout: portfolio
 nav: research
-description: Ryan King's research in dynamic cardiovascular risk prediction, multimodal foundation models, clinical LLM evaluation, and transportable healthcare AI.
+description: Explore Ryan King's research on multimodal clinical AI, cardiovascular risk prediction, ECG–report learning, and reliable models for health records.
 ---
 
 <section class="page-intro wrap"><p class="eyebrow">Research / From representations to clinical questions</p><h1>Learning from the<br><em>full clinical picture.</em></h1><p class="page-lead">I develop machine learning methods that connect longitudinal measurements, clinical language, and medical signals, with an emphasis on cardiovascular health and evaluation across clinical settings.</p><div class="actions"><a class="button" href="#publications">Publications <span aria-hidden="true">↓</span></a><a class="text-link" href="https://scholar.google.com/citations?user=rg-coNIAAAAJ&amp;hl=en">Google Scholar <span aria-hidden="true">↗</span></a></div></section>

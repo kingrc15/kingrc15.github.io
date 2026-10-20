@@ -208,8 +208,8 @@ sass:
 
 # Outputting
 permalink: /:categories/:title/
-paginate: 5 # amount of posts to show
-paginate_path: /page:num/
+# The portfolio homepage is not a paginated blog. Enabling pagination here
+# duplicates its content at /page2/; the old URL now redirects to the homepage.
 timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 

@@ -1,9 +1,10 @@
 ---
 title: Curriculum Vitae
+seo_title: "Ryan King, Ph.D. — Curriculum Vitae | Clinical AI Research"
 permalink: /cv/
 layout: portfolio
 nav: cv
-description: Curriculum vitae of Ryan King, Ph.D., Research Data Scientist at Houston Methodist's Digital Health Institute.
+description: Education, research appointments, selected publications, teaching, awards, and service of Ryan King, Ph.D., Research Data Scientist at Houston Methodist.
 ---
 
 <div class="wrap cv-wrap">

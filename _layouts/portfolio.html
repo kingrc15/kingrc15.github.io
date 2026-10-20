@@ -3,19 +3,23 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  {% capture portfolio_title %}{% if page.nav == 'home' %}Ryan King, Ph.D. — Clinical AI Research{% else %}{{ page.title }} — Ryan King, Ph.D.{% endif %}{% endcapture %}
+  {% capture portfolio_title %}{% if page.seo_title %}{{ page.seo_title }}{% elsif page.nav == 'home' %}Ryan King, Ph.D. — Clinical AI Research{% else %}{{ page.title }} — Ryan King, Ph.D.{% endif %}{% endcapture %}
   <title>{{ portfolio_title | escape }}</title>
   <meta name="description" content="{{ page.description | default: site.description | escape }}">
+  <meta name="author" content="{{ site.name | escape }}">
   <meta name="robots" content="{{ page.robots | default: 'index,follow,max-image-preview:large' | escape }}">
   <meta name="theme-color" content="#173f35">
   <link rel="canonical" href="{{ page.url | absolute_url }}">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Ryan King, Ph.D.">
+  <meta property="og:locale" content="en_US">
   <meta property="og:title" content="{{ portfolio_title | escape }}">
   <meta property="og:description" content="{{ page.description | default: site.description | escape }}">
   <meta property="og:url" content="{{ page.url | absolute_url }}">
   <meta property="og:image" content="{{ '/assets/images/ryan-king.jpg' | absolute_url }}">
   <meta property="og:image:alt" content="Ryan King">
+  <meta property="og:image:width" content="1151">
+  <meta property="og:image:height" content="1151">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="{{ portfolio_title | escape }}">
   <meta name="twitter:description" content="{{ page.description | default: site.description | escape }}">
