@@ -21,6 +21,9 @@ layout: default
     {% unless page.header.overlay_color or page.header.overlay_image %}
       <h1 id="page-title" class="page__title">{{ page.title }}</h1>
     {% endunless %}
+    {% if page.collection == 'generated_posts' %}
+      <p class="notice"><strong>Paper reading note.</strong> This page summarizes research by the authors credited in the note. For Ryan King’s authored research, see <a href="{{ '/research/#publications' | relative_url }}">selected publications</a>.</p>
+    {% endif %}
     {{ content }}
   </div>
 </div>

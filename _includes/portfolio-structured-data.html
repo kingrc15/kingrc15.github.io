@@ -1,0 +1,87 @@
+{% assign person_id = '/about/#ryan-king' | absolute_url %}
+{% assign website_id = '/#website' | absolute_url %}
+{% assign webpage_id = page.url | absolute_url | append: '#webpage' %}
+{% assign publications_id = '/research/#publications' | absolute_url %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": {{ person_id | jsonify }},
+      "name": {{ site.name | jsonify }},
+      "honorificSuffix": "Ph.D.",
+      "url": {{ '/about/' | absolute_url | jsonify }},
+      "image": {{ '/assets/images/ryan-king.jpg' | absolute_url | jsonify }},
+      "description": {{ site.description | jsonify }},
+      "jobTitle": "Research Data Scientist",
+      "worksFor": {"@type": "Organization", "name": "Houston Methodist"},
+      "alumniOf": [
+        {"@type": "CollegeOrUniversity", "name": "Texas A&M University"},
+        {"@type": "CollegeOrUniversity", "name": "Virginia Military Institute"}
+      ],
+      "sameAs": [
+        "https://scholar.google.com/citations?user=rg-coNIAAAAJ",
+        "https://github.com/kingrc15",
+        "https://www.linkedin.com/in/ryan-king-659b06179/"
+      ],
+      "knowsAbout": ["Clinical artificial intelligence", "Multimodal machine learning", "Cardiovascular risk prediction", "Electronic health records"]
+    },
+    {
+      "@type": "WebSite",
+      "@id": {{ website_id | jsonify }},
+      "url": {{ '/' | absolute_url | jsonify }},
+      "name": "Ryan King, Ph.D. — Clinical AI Research",
+      "publisher": {"@id": {{ person_id | jsonify }}},
+      "inLanguage": "en-US"
+    },
+    {
+      "@type": {% if page.nav == 'about' %}"ProfilePage"{% else %}"WebPage"{% endif %},
+      "@id": {{ webpage_id | jsonify }},
+      "url": {{ page.url | absolute_url | jsonify }},
+      "name": {{ portfolio_title | jsonify }},
+      "description": {{ page.description | default: site.description | jsonify }},
+      "isPartOf": {"@id": {{ website_id | jsonify }}},
+      "about": {"@id": {{ person_id | jsonify }}},
+      "mainEntity": {"@id": {% if page.nav == 'research' %}{{ publications_id | jsonify }}{% else %}{{ person_id | jsonify }}{% endif %}},
+      "inLanguage": "en-US"
+    }{% if page.nav == 'research' %},
+    {
+      "@type": "ItemList",
+      "@id": {{ publications_id | jsonify }},
+      "name": "Selected publications by Ryan King",
+      "numberOfItems": {{ site.data.publications | size }},
+      "itemListElement": [
+        {% for paper in site.data.publications %}
+        {% assign paper_slug = paper.title | slugify %}
+        {% assign paper_id = '/research/#publication-' | append: paper_slug | absolute_url %}
+        {
+          "@type": "ListItem",
+          "position": {{ forloop.index }},
+          "item": {
+            "@type": "ScholarlyArticle",
+            "@id": {{ paper_id | jsonify }},
+            "headline": {{ paper.title | jsonify }},
+            "url": {{ paper.url | jsonify }},
+            "description": {{ paper.summary | jsonify }},
+            {% if paper.collective_authorship %}
+            "contributor": {"@id": {{ person_id | jsonify }}},
+            "creditText": {{ paper.authors | jsonify }},
+            {% else %}
+            "author": [
+              {% assign authors = paper.authors | split: ', ' %}
+              {% for author in authors %}
+              {"@type": "Person", "name": {{ author | jsonify }}{% if author == site.name %}, "@id": {{ person_id | jsonify }}{% endif %}}{% unless forloop.last %},{% endunless %}
+              {% endfor %}
+            ],
+            {% endif %}
+            "inLanguage": "en"
+          }
+        }{% unless forloop.last %},{% endunless %}
+        {% endfor %}
+      ]
+    }
+    {% endif %}
+  ]
+}
+</script>

@@ -1,9 +1,12 @@
 ---
 layout: archive
-title: "Publications"
+title: "Paper Reading Notes"
+description: "Reading notes and summaries of research papers. For publications authored by Ryan King, see the research page."
 permalink: /collection-archive/
 author_profile: true
 ---
+
+<p>This archive collects reading notes and paper summaries. Inclusion here does not imply authorship of the original paper by Ryan King. For my authored research, see <a href="{{ '/research/#publications' | relative_url }}">selected publications</a>.</p>
 
 {% capture written_label %}'None'{% endcapture %}
 
@@ -11,7 +14,7 @@ author_profile: true
   {% unless collection.output == false or collection.label == "posts" %}
     {% capture label %}{{ collection.label }}{% endcapture %}
     {% if label != written_label %}
-      <h2 id="{{ label | slugify }}" class="archive__subtitle">{{ label }}</h2>
+      <h2 id="{{ label | slugify }}" class="archive__subtitle">{% if label == 'generated_posts' %}Paper summaries{% else %}{{ label }}{% endif %}</h2>
       {% capture written_label %}{{ label }}{% endcapture %}
     {% endif %}
   {% endunless %}

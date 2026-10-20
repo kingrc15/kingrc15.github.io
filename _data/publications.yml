@@ -40,6 +40,7 @@
 
 - title: "MEDS Decentralized, Extensible Validation (MEDS-DEV) Benchmark: Establishing Reproducibility and Comparability in ML for Health"
   authors: "MEDS-DEV working groups · Ryan King, contributing author"
+  collective_authorship: true
   venue: "ML4H Demo Track"
   year: 2024
   url: "https://openreview.net/forum?id=DExp3tRRel"
